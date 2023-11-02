@@ -35,24 +35,24 @@
    (after :accessor after :initarg :after :initform nil)
    (root-f :accessor root-f :initarg :root-f :initform nil)
    (before-f :accessor before-f :initarg :before-f :initform nil)
-   (after-f :accessor after-f :initarg :after-f :initform nil)))
+   (after-f :accessor after-f :initarg :after-f :initform nil)
+   (times-used :accessor times-used :initform 0)))
 
 ;; *** printing 
 (defmethod print-object :after ((gb gliss-break) stream)
-  (format stream "~&~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%"))
+  (format stream "~&~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~%"))
 
 (defmethod print-object ((gb gliss-break) stream)
-  (format stream "~&GLISS-BREAK ~&id: ~a, ~&root: ~a, ~&before-break: ~a, ~
-                     ~&after-break: ~a"
+  (format stream "~&GLISS-BREAK ~&id: ~a, ~&root: ~a, ~&before-break: ~a, ~&after-break: ~a"
           (id gb)
 	  (root gb)
 	  (before gb)
 	  (after gb)))
 
-;; *** check-for-any-match
+;; *** any-matchp
 ;;; check if root is the same or if the top and bottom frequency of each
 ;;; gliss can be found within a gliss of the other option.
-(defmethod check-for-any-match ((gb1 gliss-break) (gb2 gliss-break))
+(defmethod any-matchp ((gb1 gliss-break) (gb2 gliss-break))
   (let* ((r1 (root-f gb1))
 	 (r2 (root-f gb2))
 	 (intervals1 (append (before-f gb1) (after-f gb1)))
@@ -70,10 +70,10 @@
 					freq
 					(second interval)))))))
 
-;; *** check-for-match
+;; *** matchp
 ;;; only check if the root note or any of the starting and ending notes
 ;;; of the breaks match - also depends on the scale (quarter or chromatic).
-(defmethod check-for-match ((gb1 gliss-break) (gb2 gliss-break)
+(defmethod matchp ((gb1 gliss-break) (gb2 gliss-break)
 			    &optional (scale 'quarter-tone))
   (let* ((r1 (root-f gb1))
 	 (r2 (root-f gb2))
@@ -111,6 +111,63 @@
 
 ;; ** compose
 
-()
+;; using the same predicate all the time:
+#+nil(defun compose-gliss (first len lst-of-gliss &optional (pred #'matchp))
+  (labels ((match (x y)
+	     (and (not (equal x y))
+		  (funcall pred x y)))
+	   (sorter (x y) (< (times-used x) (times-used y)))
+	   (options ()
+	     (loop for gliss in lst-of-gliss
+		   when (funcall #'match first gliss)
+		     collect gliss)))
+    (loop for i from 0 below len
+	  for next = (first (sort (funcall #'options) #'sorter))
+	  collect first into result
+	  do (setf first next)
+	     (incf (times-used next))
+	  finally (loop for i in lst-of-gliss do (setf (times-used i) 0))
+		  (return result))))
+
+;; trying to equalize the use of each break:
+(defun compose-gliss (first len lst-of-gliss)
+  "Find a sequence of notes from lst-of-gliss for the desired length and 
+   starting with 'first. For each pair of consecutive notes, #'matchp or 
+   any-matchp should be true.
+   Use both, matchp and any-matchp, to be more flexible and also
+   have a chance to use notes, we would not get to with only matchp.
+   Still we try to use matchp as often as possible."
+  (labels ((match (x y)
+	     (and (not (equal x y))
+		  (matchp x y)))
+	   (any-match (x y)
+	     (and (not (equal x y))
+		  (any-matchp x y)))
+	   (sorter (x y) (< (times-used x) (times-used y)))
+	   (options (pred)
+	     (loop for gliss in lst-of-gliss
+		   when (funcall pred first gliss)
+		     collect gliss)))
+    (loop for i from 0 below len
+	  for options1 = (funcall #'options #'match)
+	  for options2 = (funcall #'options #'any-match)
+	  for options = (cond ((not options2) lst-of-gliss)
+			      ((not options1) options2)
+			      ((<= (loop for i in options1
+					 minimize (times-used i))
+				   (+ 1 (loop for i in options2
+					 minimize (times-used i))))
+			       options1)
+			      (t options2))
+	  for next = (first (sort options #'sorter))
+	  collect first into result
+	  do (setf first next)
+	     (incf (times-used next))
+	  finally (loop for i in lst-of-gliss do (setf (times-used i) 0))
+		  (return result))))
+
+(defparameter *seq1*
+  (loop for i in (compose-gliss (first *gliss*) 30 *gliss*)
+	collect (id i)))
 
 ;; EOF sort-gliss.lsp
