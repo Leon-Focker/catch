@@ -1,6 +1,6 @@
 ;; * sort-gliss.lsp
 
-(in-package :ly)
+(in-package :sc)
 
 (in-scale :quarter-tone)
 
@@ -49,7 +49,7 @@
 
 ;; *** printing 
 (defmethod print-object :after ((nt note) stream)
-  (format stream "~&~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~%"))
+  #+nil(format stream "~&~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~%"))
 
 (defmethod print-object ((bg flute-break-gliss) stream)
   (format stream "~&FLUTE-BREAK-GLISS ~&id: ~a, ~&root: ~a, ~&before-break: ~a, ~&after-break: ~a"
@@ -59,11 +59,7 @@
 	  (after bg)))
 
 (defmethod print-object ((vh viola-harmonic) stream)
-  (format stream "~&VIOLA-HARMONIC ~&id: ~a, ~&root: ~a, string: ~a, ~&sounding: ~a"
-          (id vh)
-	  (root vh)
-	  (saite vh)
-	  (sounding vh)))
+  (format stream "<VIOLA-HARMONIC ~a>" (id vh)))
 
 ;; *** any-matchp
 ;;; check if root is the same or if the top and bottom frequency of each
@@ -139,6 +135,22 @@
 		   &optional (scale 'chromatic-scale))
   (matchp vh2 bg1 scale))
 
+;; *** parse-to-event
+
+(defmethod parse-to-event ((bg flute-break-gliss) &optional (start-time 1))
+  (make-event
+   (make-chord (flatten (append `(,(root bg)) (before bg) (after bg))))
+   'q
+   :start-time start-time))
+
+(defmethod parse-to-event ((vh viola-harmonic) &optional (start-time 1))
+  (make-event
+   (make-chord `(,(root vh)
+		 ,(midi-to-note (+ (interval vh) (note-to-midi (root vh))))
+		 ,(sounding vh)))
+   'q
+   :start-time start-time))
+
 ;; *** MAKE
 (defun make-flute-break-gliss (id root before after)
   (make-instance 'flute-break-gliss
@@ -201,7 +213,34 @@
 
 (defparameter *all-vla-harmonics* (get-all-artificial-harmonics))
 
+;; *** notate
+(defun notate (lst-of-harmonics file &optional (instrument 'viola))
+  (unless (listp lst-of-harmonics) (error "not a list: ~a" lst-of-harmonics))
+  (unless (listp (car lst-of-harmonics))
+    (setf lst-of-harmonics (list lst-of-harmonics)))
+  (let* ((events (loop for i in (flatten lst-of-harmonics)
+		       collect (parse-to-event i)))
+	 (letters (loop for i in lst-of-harmonics
+			with n = 2
+			collect n
+			do (setf n (+ n (length i)))))
+	 (len (length events))
+	 (sc (make-slippery-chicken
+              '+harmonics-to-notation+
+              :ensemble `(((ins (,instrument :midi-channel 1))))
+              :set-palette '((1 ((c4))))
+              :set-map (loop for i from 1 to len collect `(,i (1)))
+              :rthm-seq-palette '((1 ((((1 4) q)))))
+	      :rehearsal-letters letters
+              :rthm-seq-map (loop for i from 1 to len collect `(,i ((ins (1))))))))
+    (map-over-events sc 0 nil 'ins
+		     #'(lambda (e) (setf (pitch-or-chord e)
+				    (pitch-or-chord (pop events)))))
+    (write-xml sc :file file)))
+
 ;; ** compose
+
+;; *** flute
 
 ;; trying to equalize the use of each break:
 (defun compose-flute (first len lst-of-gliss)
@@ -247,33 +286,57 @@
   (loop for i in (compose-flute (first *gliss*) 30 *gliss*)
 	collect (id i)))
 
-(defun compose-viola (first len lst-of-hrm)
-  "start with one string and during the duration 
-(1/3length, 3/5length, 4/5length) start using other strings as well."
-  )
+(notate *flute* "/E/catch/flute-gliss.xml" 'flute)
+
+;; *** viola
 
 (defun match-streak (ls)
   (loop for k in ls and i from 0
 	with options = *all-vla-harmonics*
 	with last = '()
 	when options
-	  do (setf last options
+	  do (setf last (reverse options)
 		   options '())
 	     (loop for n in last
 		   when (matchp k n) do (push n options))
 	unless options do (return (values last i))
 	  finally (return (values last (1+ i)))))
 
-(defun get-timeline-track (start seq)
+(defun get-timeline-track (start seq &optional get-objects)
   (let* ((streak (multiple-value-list (match-streak (subseq seq start)))))
     (if (car streak)
 	(append (loop repeat start collect nil)
-		(loop repeat (second streak) collect (length (first streak)))
+		(loop repeat (second streak)
+		      collect (if get-objects (first streak) (length (first streak))))
 		(loop repeat (- (length seq) (second streak) start) collect nil))
 	(loop repeat (length seq) collect nil))))
 
+(defun combine-timeline-tracks (tracks)
+  (loop for i from 0 below (apply #'min (mapcar #'length tracks))
+	collect (remove-duplicates
+		 (loop for track in tracks
+		       when (nth i track)
+			 append (nth i track)))))
+
 (defun print-timeline (ls &optional (stream t))
   (format stream "~{~a~%~}" ls))
+
+(defun sort-harmonics (harmonics)
+  (sort (sort harmonics #'(lambda (x y) (< (note-to-midi (root x))
+				      (note-to-midi (root y)))))
+	#'(lambda (x y) (> (saite x) (saite y)))))
+
+#+nil(defun reduce-by-string (lst-of-optns string-env)
+  (let* ((len (length lst-of-optns)))
+    (loop for i from 0 and opt in lst-of-optns
+	  for prog = (/ i (1- len))
+	  for strings = (list (round (interpolate prog string-env)))
+	  collect (loop for n in opt when (find (saite n) strings) collect n))))
+
+#+nil(defun compose-viola (first len lst-of-hrm)
+  "start with one string and during the duration 
+(1/3length, 3/5length, 4/5length) start using other strings as well."
+  )
 
 (loop for i from 0 below (length *gliss*)
       collect (get-timeline-track i *gliss*))
@@ -292,6 +355,17 @@
       collect (remove-duplicates
 	       (loop for n in (match-streak (subseq *flute* i))
 		     collect (saite n))))
+
+(defparameter *viola-options*
+  (combine-timeline-tracks
+   (loop for i from 0 below (1- (length *flute*))
+	 collect (get-timeline-track i *flute* t))))
+
+;; to XML
+(harmonics-to-notation
+ (loop for bar in *viola-options*
+       collect (sort-harmonics bar))
+       "/E/catch/viola.xml")
 
 ;; NOTE: this is only harmonics for viola, not gliss!
 
