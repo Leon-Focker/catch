@@ -28,35 +28,51 @@
 
 ;; ** classes and parsing
 
-(defclass gliss-break ()
+(defclass note ()
   ((id :accessor id :initarg :id :initform nil)
    (root :accessor root :initarg :root :initform nil)
-   (before :accessor before :initarg :before :initform nil)
-   (after :accessor after :initarg :after :initform nil)
    (root-f :accessor root-f :initarg :root-f :initform nil)
+   (times-used :accessor times-used :type integer :initform 0)))
+
+(defclass flute-break-gliss (note)
+  ((before :accessor before :initarg :before :initform nil)
+   (after :accessor after :initarg :after :initform nil)
    (before-f :accessor before-f :initarg :before-f :initform nil)
-   (after-f :accessor after-f :initarg :after-f :initform nil)
-   (times-used :accessor times-used :initform 0)))
+   (after-f :accessor after-f :initarg :after-f :initform nil)))
+
+(defclass viola-harmonic (note)
+  ((saite :type integer :accessor saite :initarg :saite :initform 4)
+   (sounding :accessor sounding :initarg :sounding :initform nil)
+   (sounding-f :accessor sounding-f :initarg :sounding-f :initform nil)
+   (interval :accessor interval :initarg :interval :type integer
+	     :initform nil)))
 
 ;; *** printing 
-(defmethod print-object :after ((gb gliss-break) stream)
+(defmethod print-object :after ((nt note) stream)
   (format stream "~&~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~%"))
 
-(defmethod print-object ((gb gliss-break) stream)
-  (format stream "~&GLISS-BREAK ~&id: ~a, ~&root: ~a, ~&before-break: ~a, ~&after-break: ~a"
-          (id gb)
-	  (root gb)
-	  (before gb)
-	  (after gb)))
+(defmethod print-object ((bg flute-break-gliss) stream)
+  (format stream "~&FLUTE-BREAK-GLISS ~&id: ~a, ~&root: ~a, ~&before-break: ~a, ~&after-break: ~a"
+          (id bg)
+	  (root bg)
+	  (before bg)
+	  (after bg)))
+
+(defmethod print-object ((vh viola-harmonic) stream)
+  (format stream "~&VIOLA-HARMONIC ~&id: ~a, ~&root: ~a, string: ~a, ~&sounding: ~a"
+          (id vh)
+	  (root vh)
+	  (saite vh)
+	  (sounding vh)))
 
 ;; *** any-matchp
 ;;; check if root is the same or if the top and bottom frequency of each
 ;;; gliss can be found within a gliss of the other option.
-(defmethod any-matchp ((gb1 gliss-break) (gb2 gliss-break))
-  (let* ((r1 (root-f gb1))
-	 (r2 (root-f gb2))
-	 (intervals1 (append (before-f gb1) (after-f gb1)))
-	 (intervals2 (append (before-f gb2) (after-f gb2))))
+(defmethod any-matchp ((bg1 flute-break-gliss) (bg2 flute-break-gliss))
+  (let* ((r1 (root-f bg1))
+	 (r2 (root-f bg2))
+	 (intervals1 (append (before-f bg1) (after-f bg1)))
+	 (intervals2 (append (before-f bg2) (after-f bg2))))
     (or (equal (freq-to-note r1 'chromatic-scale)
 	       (freq-to-note r2 'chromatic-scale))
 	(loop for interval in intervals1
@@ -73,14 +89,14 @@
 ;; *** matchp
 ;;; only check if the root note or any of the starting and ending notes
 ;;; of the breaks match - also depends on the scale (quarter or chromatic).
-(defmethod matchp ((gb1 gliss-break) (gb2 gliss-break)
+(defmethod matchp ((bg1 flute-break-gliss) (bg2 flute-break-gliss)
 			    &optional (scale 'quarter-tone))
-  (let* ((r1 (root-f gb1))
-	 (r2 (root-f gb2))
-	 (break1 (append (loop for b in (before-f gb1) collect (first b))
-			 (loop for a in (after-f gb1) collect (second a))))
-	 (break2 (append (loop for b in (before-f gb2) collect (first b))
-			 (loop for a in (after-f gb2) collect (second a)))))
+  (let* ((r1 (root-f bg1))
+	 (r2 (root-f bg2))
+	 (break1 (append (loop for b in (before-f bg1) collect (first b))
+			 (loop for a in (after-f bg1) collect (second a))))
+	 (break2 (append (loop for b in (before-f bg2) collect (first b))
+			 (loop for a in (after-f bg2) collect (second a)))))
     ;; predicate for checking, if two notes are the same, depending on the scale:
     (flet ((samenotep (a b)
 	     (equal (freq-to-note a scale)
@@ -89,8 +105,43 @@
 	  (loop for note in break1
 		thereis (find note break2 :test #'samenotep))))))
 
-(defun make-gliss-break (id root before after)
-  (make-instance 'gliss-break
+(defmethod matchp ((vh1 viola-harmonic) (vh2 viola-harmonic)
+		   &optional (scale 'chromatic-scale))
+  (let* ((r1 (root-f vh1))
+	 (r2 (root-f vh2))
+	 (s1 (sounding-f vh1))
+	 (s2 (sounding-f vh2)))
+    (flet ((samenotep (a b)
+	     (equal (freq-to-note a scale)
+		    (freq-to-note b scale))))
+      (or (samenotep r1 r2)
+	  (samenotep s1 s2)))))
+
+(defmethod matchp ((vh1 viola-harmonic) (bg2 flute-break-gliss)
+		   &optional (scale 'chromatic-scale))
+  (let* ((r1 (root-f vh1))
+	 (r2 (root-f bg2))
+	 (s1 (sounding-f vh1))
+	 (intervals2 (append (before-f bg2) (after-f bg2))))
+    (or (equal (freq-to-note r1 scale)
+	       (freq-to-note r2 scale))
+	(equal (freq-to-note s1 scale)
+	       (freq-to-note r2 scale))
+        (loop for interval in intervals2
+	      thereis (or (<= (first interval)
+			      r1
+			      (second interval))
+			  (<= (first interval)
+			      s1
+			      (second interval)))))))
+
+(defmethod matchp ((bg1 flute-break-gliss) (vh2 viola-harmonic)
+		   &optional (scale 'chromatic-scale))
+  (matchp vh2 bg1 scale))
+
+;; *** MAKE
+(defun make-flute-break-gliss (id root before after)
+  (make-instance 'flute-break-gliss
 		 :id id
 		 :root root
 		 :before before
@@ -103,34 +154,57 @@
 				 collect
 				 (sort (mapcar #'note-to-freq option) #'<))))
 
+(defun get-interval-from-harmonic (root sounding)
+  (let* ((diff (- (note-to-midi sounding) (note-to-midi root))))
+    (cond ((= diff 19) 7)
+	  ((= diff 24) 5)
+	  ((= diff 28) 4)
+	  ((= diff 31) 3)
+	  (t (warn "weird interval: ~a ~a" root sounding)))))
+
+(defun make-viola-harmonic (id root sounding saite)
+  (make-instance 'viola-harmonic
+		 :id (or id (format nil "~a-~a-~a" saite root sounding))
+		 :root root
+		 :sounding sounding
+		 :saite saite
+		 :root-f (note-to-freq root)
+		 :sounding-f (note-to-freq sounding)
+		 :interval (get-interval-from-harmonic root sounding)))
+
+;; *** find-with-id
+(defun find-with-id (id ls)
+  (find (string id) ls :test #'(lambda (x y) (equal x (id y)))))
+
 ;; *** *gliss*
 (defparameter *gliss*
   (loop for note in +gliss+ and i from 0
 	collect
-	(make-gliss-break i (first note) (second note) (third note))))
+	(make-flute-break-gliss i (first note) (second note) (third note))))
+
+;; *** viola
+
+;;; all possible artificial viola harmonics:
+(defun get-all-artificial-harmonics ()
+  (loop for froms in '((f3 c4 g4 d5)(cs3 gs3 ds4 as4)(cs3 gs3 ds4 as4)(cs3 gs3 ds4 as4))
+	for tos in '((b4 fs4 cs5 gs5)(c4 g4 d5 a5)(c4 g4 d5 a5)(c4 g4 d5 a5))
+	for interval in '(19 24 28 31)
+	append
+	(loop for saite in '(4 3 2 1)
+	      and from in froms
+	      and to in tos
+	      append (loop for note from (note-to-midi from) to (note-to-midi to)
+			   collect (make-viola-harmonic nil
+							(midi-to-note note)
+							(midi-to-note (+ interval note))
+							saite)))))
+
+(defparameter *all-vla-harmonics* (get-all-artificial-harmonics))
 
 ;; ** compose
 
-;; using the same predicate all the time:
-#+nil(defun compose-gliss (first len lst-of-gliss &optional (pred #'matchp))
-  (labels ((match (x y)
-	     (and (not (equal x y))
-		  (funcall pred x y)))
-	   (sorter (x y) (< (times-used x) (times-used y)))
-	   (options ()
-	     (loop for gliss in lst-of-gliss
-		   when (funcall #'match first gliss)
-		     collect gliss)))
-    (loop for i from 0 below len
-	  for next = (first (sort (funcall #'options) #'sorter))
-	  collect first into result
-	  do (setf first next)
-	     (incf (times-used next))
-	  finally (loop for i in lst-of-gliss do (setf (times-used i) 0))
-		  (return result))))
-
 ;; trying to equalize the use of each break:
-(defun compose-gliss (first len lst-of-gliss)
+(defun compose-flute (first len lst-of-gliss)
   "Find a sequence of notes from lst-of-gliss for the desired length and 
    starting with 'first. For each pair of consecutive notes, #'matchp or 
    any-matchp should be true.
@@ -166,8 +240,59 @@
 	  finally (loop for i in lst-of-gliss do (setf (times-used i) 0))
 		  (return result))))
 
-(defparameter *seq1*
-  (loop for i in (compose-gliss (first *gliss*) 30 *gliss*)
+(defparameter *flute*
+  (loop for i in (compose-flute (first *gliss*) 30 *gliss*) collect i))
+
+(defparameter *flute-id*
+  (loop for i in (compose-flute (first *gliss*) 30 *gliss*)
 	collect (id i)))
+
+(defun compose-viola (first len lst-of-hrm)
+  "start with one string and during the duration 
+(1/3length, 3/5length, 4/5length) start using other strings as well."
+  )
+
+(defun match-streak (ls)
+  (loop for k in ls and i from 0
+	with options = *all-vla-harmonics*
+	with last = '()
+	when options
+	  do (setf last options
+		   options '())
+	     (loop for n in last
+		   when (matchp k n) do (push n options))
+	unless options do (return (values last i))
+	  finally (return (values last (1+ i)))))
+
+(defun get-timeline-track (start seq)
+  (let* ((streak (multiple-value-list (match-streak (subseq seq start)))))
+    (if (car streak)
+	(append (loop repeat start collect nil)
+		(loop repeat (second streak) collect (length (first streak)))
+		(loop repeat (- (length seq) (second streak) start) collect nil))
+	(loop repeat (length seq) collect nil))))
+
+(defun print-timeline (ls &optional (stream t))
+  (format stream "~{~a~%~}" ls))
+
+(loop for i from 0 below (length *gliss*)
+      collect (get-timeline-track i *gliss*))
+
+(loop for i from 0 below (length *gliss*)
+      collect (remove-duplicates
+	       (loop for n in (match-streak (subseq *gliss* i))
+		     collect (saite n))))
+
+;; for the actual flute sequence:
+
+(loop for i from 0 below (length *flute*)
+      collect (get-timeline-track i *flute*))
+
+(loop for i from 0 below (length *flute*)
+      collect (remove-duplicates
+	       (loop for n in (match-streak (subseq *flute* i))
+		     collect (saite n))))
+
+;; NOTE: this is only harmonics for viola, not gliss!
 
 ;; EOF sort-gliss.lsp
