@@ -10076,17 +10076,10 @@
             <sigD>4</sigD>
             </TimeSig>
           <Image>
-            <Image>
-              <autoplace>0</autoplace>
-              <z>6899</z>
-              <path>c7482df32e69971d9aff9fad8c680246.svg</path>
-              <linkPath>E:/Notation/vor_der_brücke.svg</linkPath>
-              <size w="6.00064" h="8.48477"/>
-              </Image>
             <autoplace>0</autoplace>
             <offset x="-7.43" y="-2.75"/>
             <path>dcb2aad4d3a1414c130796843c7b56c5.svg</path>
-            <linkPath>C:/Users/leonf/Desktop/bridge_clef_2.svg</linkPath>
+            <linkPath>notation/bridge_clef_2.svg</linkPath>
             <size w="7.23595" h="10.2315"/>
             </Image>
           <Chord>
