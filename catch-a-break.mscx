@@ -9540,8 +9540,992 @@ hin und her kippen
             <sigD>4</sigD>
             </TimeSig>
           <StaffText>
+            <visible>0</visible>
             <text>koexisiteren</text>
             </StaffText>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <offset x="1.53056" y="0.0493729"/>
+                </Symbol>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <Note>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          <StaffText>
+            <bold>1</bold>
+            <color r="255" g="0" b="0" a="255"/>
+            <offset x="-2.32761" y="-6.92538"/>
+            <text>wann atmen?</text>
+            </StaffText>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <pitch>84</pitch>
+              <tpc>14</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <dots>2</dots>
+            <durationType>half</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Hook>
+              <name>flag8thDown</name>
+              <visible>0</visible>
+              </Hook>
+            <Note>
+              <pitch>60</pitch>
+              <tpc>14</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <visible>0</visible>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="0" y="0"/>
+                    <visible>0</visible>
+                    </Segment>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/2</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>83</pitch>
+              <tpc>19</tpc>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/2</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <stretch>0.9</stretch>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <offset x="1.53056" y="0.0493729"/>
+                </Symbol>
+              <pitch>84</pitch>
+              <tpc>14</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <pitch>84</pitch>
+              <tpc>14</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <pitch>88</pitch>
+              <tpc>18</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <dots>2</dots>
+            <durationType>half</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>60</pitch>
+              <tpc>14</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Hook>
+              <name>flag8thDown</name>
+              <visible>0</visible>
+              </Hook>
+            <Note>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <pitch>81</pitch>
+              <tpc>17</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <visible>0</visible>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="0" y="0"/>
+                    <visible>0</visible>
+                    </Segment>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/2</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>84</pitch>
+              <tpc>14</tpc>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/2</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <stretch>0.9</stretch>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <offset x="1.53056" y="0.0493729"/>
+                </Symbol>
+              <pitch>88</pitch>
+              <tpc>18</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <pitch>88</pitch>
+              <tpc>18</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <dots>2</dots>
+            <durationType>half</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Hook>
+              <name>flag8thDown</name>
+              <visible>0</visible>
+              </Hook>
+            <Note>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <Stem>
+              <autoplace>0</autoplace>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <autoplace>0</autoplace>
+              <visible>0</visible>
+              <pitch>88</pitch>
+              <tpc>18</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <visible>0</visible>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="0" y="0"/>
+                    <visible>0</visible>
+                    </Segment>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/2</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>84</pitch>
+              <tpc>14</tpc>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/2</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <stretch>0.9</stretch>
+        <LayoutBreak>
+          <subtype>line</subtype>
+          </LayoutBreak>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <offset x="1.53056" y="0.0493729"/>
+                </Symbol>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <pitch>83</pitch>
+              <tpc>19</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <visible>0</visible>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="0" y="0"/>
+                    <visible>0</visible>
+                    </Segment>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/2</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/2</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <offset x="1.53056" y="0.0493729"/>
+                </Symbol>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <Note>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <pitch>84</pitch>
+              <tpc>14</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <dots>2</dots>
+            <durationType>half</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Hook>
+              <name>flag8thDown</name>
+              <visible>0</visible>
+              </Hook>
+            <Note>
+              <pitch>60</pitch>
+              <tpc>14</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <visible>0</visible>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="0" y="0"/>
+                    <visible>0</visible>
+                    </Segment>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/2</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>83</pitch>
+              <tpc>19</tpc>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/2</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <offset x="1.53056" y="0.0493729"/>
+                </Symbol>
+              <pitch>84</pitch>
+              <tpc>14</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <pitch>84</pitch>
+              <tpc>14</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <pitch>88</pitch>
+              <tpc>18</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <dots>2</dots>
+            <durationType>half</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>60</pitch>
+              <tpc>14</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Hook>
+              <name>flag8thDown</name>
+              <visible>0</visible>
+              </Hook>
+            <Note>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <pitch>81</pitch>
+              <tpc>17</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <visible>0</visible>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="0" y="0"/>
+                    <visible>0</visible>
+                    </Segment>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/2</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>84</pitch>
+              <tpc>14</tpc>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/2</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <offset x="1.53056" y="0.0493729"/>
+                </Symbol>
+              <pitch>88</pitch>
+              <tpc>18</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <pitch>88</pitch>
+              <tpc>18</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <dots>2</dots>
+            <durationType>half</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Hook>
+              <name>flag8thDown</name>
+              <visible>0</visible>
+              </Hook>
+            <Note>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <Stem>
+              <autoplace>0</autoplace>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <autoplace>0</autoplace>
+              <visible>0</visible>
+              <pitch>88</pitch>
+              <tpc>18</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <visible>0</visible>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="0" y="0"/>
+                    <visible>0</visible>
+                    </Segment>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/2</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>84</pitch>
+              <tpc>14</tpc>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/2</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <offset x="1.53056" y="0.0493729"/>
+                </Symbol>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <pitch>83</pitch>
+              <tpc>19</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <visible>0</visible>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="0" y="0"/>
+                    <visible>0</visible>
+                    </Segment>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/2</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <dots>1</dots>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>86</pitch>
+              <tpc>16</tpc>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/2</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <stretch>0.9</stretch>
+        <voice>
           <Chord>
             <durationType>half</durationType>
             <Note>
@@ -9926,6 +10910,9 @@ hin und her kippen
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
+        <LayoutBreak>
+          <subtype>line</subtype>
+          </LayoutBreak>
         <voice>
           <Chord>
             <durationType>half</durationType>
@@ -10026,70 +11013,6 @@ hin und her kippen
                 </Spanner>
               </Note>
             </Chord>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
           </voice>
         </Measure>
       <Measure>
@@ -12994,6 +13917,17 @@ hin und her kippen
             <Note>
               <pitch>77</pitch>
               <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>1/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
               </Note>
             </Chord>
           <Chord>
@@ -13001,6 +13935,13 @@ hin und her kippen
             <Note>
               <pitch>74</pitch>
               <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             </Chord>
           </voice>
@@ -15099,66 +16040,600 @@ hin und her kippen
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>3/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-3/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="3.07576" y="0"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>3/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-3/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="3.07576" y="0"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
@@ -16764,6 +18239,7 @@ hin und her kippen
             <durationType>whole</durationType>
             <Note>
               <offset x="0" y="0.2"/>
+              <visible>0</visible>
               <pitch>62</pitch>
               <tpc>16</tpc>
               <small>1</small>
@@ -16804,11 +18280,201 @@ hin und her kippen
               <small>1</small>
               <headType>quarter</headType>
               <Spanner type="TextLine">
+                <TextLine>
+                  <diagonal>1</diagonal>
+                  <lineWidth>0.2</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
                 <prev>
                   <location>
                     <measures>-2</measures>
                     </location>
                   </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <small>1</small>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <offset x="0" y="0.2"/>
+              <visible>0</visible>
+              <Image>
+                <autoplace>0</autoplace>
+                <offset x="-7.43" y="-4.3"/>
+                <path>dcb2aad4d3a1414c130796843c7b56c5.svg</path>
+                <linkPath>notation/bridge_clef_2.svg</linkPath>
+                <size w="7.23595" h="10.2315"/>
+                </Image>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <small>1</small>
+              <headType>quarter</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <offset x="0" y="0.2"/>
+              <visible>0</visible>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <small>1</small>
+              <headType>quarter</headType>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.2</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>2</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <offset x="0" y="0.2"/>
+              <visible>0</visible>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <small>1</small>
+              <headType>quarter</headType>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <visible>0</visible>
+            <durationType>half</durationType>
+            </Rest>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <offset x="0" y="0.2"/>
+              <visible>0</visible>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <small>1</small>
+              <headType>quarter</headType>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.2</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-2</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <offset x="0" y="0.2"/>
+              <visible>0</visible>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <small>1</small>
+              <headType>quarter</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <small>1</small>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <Image>
+                <autoplace>0</autoplace>
+                <offset x="-7.43" y="-3.8"/>
+                <path>dcb2aad4d3a1414c130796843c7b56c5.svg</path>
+                <linkPath>notation/bridge_clef_2.svg</linkPath>
+                <size w="7.23595" h="10.2315"/>
+                </Image>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <small>1</small>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.2</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>3</measures>
+                    </location>
+                  </next>
                 </Spanner>
               </Note>
             </Chord>
@@ -16834,58 +18500,24 @@ hin und her kippen
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <offset x="0" y="0.2"/>
+              <visible>0</visible>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <small>1</small>
+              <headType>quarter</headType>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-3</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
@@ -18482,24 +20114,21 @@ hin und her kippen
             </TimeSig>
           <Rest>
             <visible>0</visible>
-            <durationType>whole</durationType>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
             </Rest>
           </voice>
         </Measure>
       <Measure>
         <voice>
           <Chord>
-            <durationType>half</durationType>
+            <durationType>whole</durationType>
             <Note>
               <visible>0</visible>
               <pitch>67</pitch>
               <tpc>15</tpc>
               </Note>
             </Chord>
-          <Rest>
-            <visible>0</visible>
-            <durationType>half</durationType>
-            </Rest>
           </voice>
         </Measure>
       <Measure>
@@ -18522,6 +20151,18 @@ hin und her kippen
         </Measure>
       <Measure>
         <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
           <Rest>
             <visible>0</visible>
             <durationType>measure</durationType>
@@ -18532,6 +20173,40 @@ hin und her kippen
       <Measure>
         <voice>
           <Rest>
+            <visible>0</visible>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>65</pitch>
+              <tpc>13</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>65</pitch>
+              <tpc>13</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <visible>0</visible>
             <durationType>measure</durationType>
             <duration>4/4</duration>
             </Rest>
@@ -18540,6 +20215,7 @@ hin und her kippen
       <Measure>
         <voice>
           <Rest>
+            <visible>0</visible>
             <durationType>measure</durationType>
             <duration>4/4</duration>
             </Rest>
@@ -18548,38 +20224,7 @@ hin und her kippen
       <Measure>
         <voice>
           <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
+            <visible>0</visible>
             <durationType>measure</durationType>
             <duration>4/4</duration>
             </Rest>
@@ -23737,9 +25382,6 @@ und abrupt wegnehmen
               <tpc>11</tpc>
               </Note>
             </Chord>
-          <location>
-            <fractions>-1/2</fractions>
-            </location>
           </voice>
         </Measure>
       <Measure>
@@ -24098,6 +25740,9 @@ und abrupt wegnehmen
         </Measure>
       <Measure>
         <voice>
+          <StaffText>
+            <text>viola lange, langsame glissandi</text>
+            </StaffText>
           <Rest>
             <durationType>measure</durationType>
             <duration>4/4</duration>
@@ -24138,6 +25783,10 @@ und abrupt wegnehmen
         </Measure>
       <Measure>
         <voice>
+          <StaffText>
+            <offset x="-12.0697" y="-1.15675"/>
+            <text>über Register nachdenken</text>
+            </StaffText>
           <Rest>
             <durationType>measure</durationType>
             <duration>4/4</duration>
@@ -24397,106 +26046,466 @@ und abrupt wegnehmen
           <Chord>
             <durationType>whole</durationType>
             <Note>
-              <pitch>48</pitch>
+              <Spanner type="Tie">
+                <Tie>
+                  </Tie>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              <pitch>60</pitch>
               <tpc>14</tpc>
               </Note>
             <Note>
-              <pitch>52</pitch>
+              <Spanner type="Tie">
+                <Tie>
+                  </Tie>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              <pitch>64</pitch>
               <tpc>18</tpc>
-              </Note>
-            <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
               </Note>
             </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <Spanner type="Tie">
+                <Tie>
+                  </Tie>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="Tie">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              <pitch>60</pitch>
+              <tpc>14</tpc>
+              </Note>
+            <Note>
+              <Spanner type="Tie">
+                <Tie>
+                  </Tie>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="Tie">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <Spanner type="Tie">
+                <Tie>
+                  </Tie>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="Tie">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              <pitch>60</pitch>
+              <tpc>14</tpc>
+              </Note>
+            <Note>
+              <Spanner type="Tie">
+                <Tie>
+                  </Tie>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="Tie">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <Spanner type="Tie">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              <pitch>60</pitch>
+              <tpc>14</tpc>
+              </Note>
+            <Note>
+              <Spanner type="Tie">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
+              </Note>
+            </Chord>
           <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
+            <durationType>half</durationType>
             </Rest>
           </voice>
         </Measure>
       <Measure>
         <voice>
           <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
+            <durationType>half</durationType>
             </Rest>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <Spanner type="Tie">
+                <Tie>
+                  </Tie>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-1/2</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <pitch>60</pitch>
+              <tpc>14</tpc>
+              </Note>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <autoplace>0</autoplace>
+                <offset x="2.03" y="0.05"/>
+                </Symbol>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <Spanner type="Tie">
+                <Tie>
+                  </Tie>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="Tie">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>1/2</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              <pitch>60</pitch>
+              <tpc>14</tpc>
+              </Note>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <autoplace>0</autoplace>
+                <offset x="6.53" y="0.05"/>
+                </Symbol>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <Spanner type="Tie">
+                <Tie>
+                  </Tie>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="Tie">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              <pitch>60</pitch>
+              <tpc>14</tpc>
+              </Note>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <autoplace>0</autoplace>
+                <offset x="6.53" y="0.05"/>
+                </Symbol>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <Spanner type="Tie">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              <pitch>60</pitch>
+              <tpc>14</tpc>
+              </Note>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <autoplace>0</autoplace>
+                <offset x="6.53" y="0.05"/>
+                </Symbol>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <pitch>60</pitch>
+              <tpc>14</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <autoplace>0</autoplace>
+                <offset x="6.53" y="0.05"/>
+                </Symbol>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <pitch>59</pitch>
+              <tpc>19</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            <Note>
+              <Accidental>
+                <subtype>accidentalSharp</subtype>
+                </Accidental>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <autoplace>0</autoplace>
+                <offset x="6.53" y="0.05"/>
+                </Symbol>
+              <pitch>63</pitch>
+              <tpc>23</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <pitch>57</pitch>
+              <tpc>17</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            <Note>
+              <Accidental>
+                <subtype>accidentalSharp</subtype>
+                </Accidental>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <autoplace>0</autoplace>
+                <offset x="6.53" y="0.05"/>
+                </Symbol>
+              <pitch>61</pitch>
+              <tpc>21</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <pitch>55</pitch>
+              <tpc>15</tpc>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <autoplace>0</autoplace>
+                <offset x="6.53" y="0.05"/>
+                </Symbol>
+              <pitch>59</pitch>
+              <tpc>19</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
