@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
-  <programVersion>3.6.0</programVersion>
-  <programRevision>1977cb3</programRevision>
+  <programVersion>3.6.2</programVersion>
+  <programRevision>3224f34</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -17,7 +17,7 @@
       <minVerticalDistance>-1</minVerticalDistance>
       <Spatium>1.74978</Spatium>
       </Style>
-    <showInvisible>0</showInvisible>
+    <showInvisible>1</showInvisible>
     <showUnprintable>1</showUnprintable>
     <showFrames>1</showFrames>
     <showMargins>0</showMargins>
@@ -37,10 +37,10 @@
     <Order id="orchestral" customized="1">
       <name>Orchestral</name>
       <instrument id="flute">
-        <family id="flutes">Flutes</family>
+        <family id="flutes">Flöten</family>
         </instrument>
       <instrument id="viola">
-        <family id="orchestral-strings">Orchestral Strings</family>
+        <family id="orchestral-strings">Orchestrale Streicher</family>
         </instrument>
       <section id="woodwind" brackets="true" showSystemMarkings="true" barLineSpan="true" thinBrackets="true">
         <family>flutes</family>
@@ -54,6 +54,7 @@
         <family>horns</family>
         <family>trumpets</family>
         <family>cornets</family>
+        <family>flugelhorns</family>
         <family>trombones</family>
         <family>tubas</family>
         </section>
@@ -524,7 +525,7 @@
             <text>A</text>
             </RehearsalMark>
           <Tempo>
-            <tempo>1.83333</tempo>
+            <tempo>1.8333299999999999</tempo>
             <followText>1</followText>
             <text><b></b><font face="ScoreText"></font><b><font face="Edwin"></font> = 110</b></text>
             </Tempo>
@@ -4335,7 +4336,7 @@
             <text>B</text>
             </RehearsalMark>
           <Tempo>
-            <tempo>1.58333</tempo>
+            <tempo>1.5833299999999999</tempo>
             <followText>1</followText>
             <offset x="-9.9848" y="-4.30419"/>
             <text><b></b><font face="ScoreText"></font><b><font face="Edwin"></font> = 95</b></text>
@@ -11643,7 +11644,7 @@ hin und her kippen
             <text>C</text>
             </RehearsalMark>
           <Tempo>
-            <tempo>1.08333</tempo>
+            <tempo>1.0833299999999999</tempo>
             <followText>1</followText>
             <minDistance>0.264876</minDistance>
             <offset x="-3.18972" y="-7.98286"/>
