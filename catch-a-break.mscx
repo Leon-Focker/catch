@@ -17,7 +17,7 @@
       <minVerticalDistance>-1</minVerticalDistance>
       <Spatium>1.74978</Spatium>
       </Style>
-    <showInvisible>1</showInvisible>
+    <showInvisible>0</showInvisible>
     <showUnprintable>1</showUnprintable>
     <showFrames>1</showFrames>
     <showMargins>0</showMargins>
@@ -527,8 +527,17 @@
           <Tempo>
             <tempo>1.8333299999999999</tempo>
             <followText>1</followText>
+            <autoplace>0</autoplace>
+            <offset x="-7.44042" y="-8.65391"/>
             <text><b></b><font face="ScoreText"></font><b><font face="Edwin"></font> = 110</b></text>
             </Tempo>
+          <StaffText>
+            <minDistance>0.427818</minDistance>
+            <size>8</size>
+            <italic>1</italic>
+            <offset x="0.0630854" y="-6.51653"/>
+            <text>aufgeregt</text>
+            </StaffText>
           <Spanner type="TextLine">
             <TextLine>
               <beginText>1</beginText>
@@ -2347,6 +2356,12 @@
             <subtype>pp</subtype>
             <velocity>33</velocity>
             </Dynamic>
+          <StaffText>
+            <size>8</size>
+            <italic>1</italic>
+            <offset x="-0.307578" y="-3.18473"/>
+            <text>zärtlich</text>
+            </StaffText>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
@@ -2997,6 +3012,12 @@
             <subtype>f</subtype>
             <velocity>96</velocity>
             </Dynamic>
+          <StaffText>
+            <size>8</size>
+            <italic>1</italic>
+            <offset x="0.298865" y="-3.5301"/>
+            <text>wie Seite 1</text>
+            </StaffText>
           <Tuplet>
             <normalNotes>4</normalNotes>
             <actualNotes>5</actualNotes>
@@ -3557,6 +3578,10 @@
       <Measure>
         <stretch>0</stretch>
         <voice>
+          <Dynamic>
+            <subtype>sfz</subtype>
+            <velocity>112</velocity>
+            </Dynamic>
           <Spanner type="HairPin">
             <HairPin>
               <subtype>1</subtype>
@@ -3990,6 +4015,12 @@
           <subtype>line</subtype>
           </LayoutBreak>
         <voice>
+          <StaffText>
+            <size>8</size>
+            <italic>1</italic>
+            <offset x="0" y="-2.56365"/>
+            <text>&quot;gezähmt&quot;</text>
+            </StaffText>
           <Chord>
             <durationType>16th</durationType>
             <Note>
@@ -4241,6 +4272,11 @@
       <Measure>
         <stretch>0.5</stretch>
         <voice>
+          <StaffText>
+            <size>8</size>
+            <italic>1</italic>
+            <text>ruhig</text>
+            </StaffText>
           <Rest>
             <durationType>measure</durationType>
             <duration>4/4</duration>
@@ -4342,6 +4378,7 @@
             <text><b></b><font face="ScoreText"></font><b><font face="Edwin"></font> = 95</b></text>
             </Tempo>
           <StaffText>
+            <size>8</size>
             <italic>1</italic>
             <text>zart, luftig</text>
             </StaffText>
@@ -4550,6 +4587,7 @@
             </TimeSig>
           <Fermata>
             <subtype>fermataAbove</subtype>
+            <visible>0</visible>
             </Fermata>
           <Rest>
             <durationType>measure</durationType>
@@ -5190,6 +5228,9 @@
         </Measure>
       <Measure>
         <voice>
+          <Fermata>
+            <subtype>fermataAbove</subtype>
+            </Fermata>
           <Rest>
             <durationType>measure</durationType>
             <duration>4/4</duration>
@@ -5687,12 +5728,6 @@
         </Measure>
       <Measure>
         <voice>
-          <StaffText>
-            <size>8</size>
-            <italic>1</italic>
-            <offset x="-1.69284" y="-3.64853"/>
-            <text>aufgeregt</text>
-            </StaffText>
           <Rest>
             <durationType>half</durationType>
             </Rest>
@@ -5745,6 +5780,12 @@
                 </Spanner>
               </Note>
             </Chord>
+          <StaffText>
+            <minDistance>-2.86439</minDistance>
+            <size>8</size>
+            <offset x="7.73556" y="-4.01851"/>
+            <text>so ruhig wie möglich ...</text>
+            </StaffText>
           <Chord>
             <durationType>quarter</durationType>
             <Spanner type="Slur">
@@ -5769,6 +5810,7 @@
           <Dynamic>
             <subtype>mf</subtype>
             <velocity>80</velocity>
+            <visible>0</visible>
             </Dynamic>
           </voice>
         </Measure>
@@ -6506,8 +6548,10 @@
               </Note>
             </Chord>
           <StaffText>
+            <minDistance>0.336163</minDistance>
             <size>8</size>
-            <offset x="4.14288" y="-6.92749"/>
+            <align>center,baseline</align>
+            <offset x="10.4733" y="-7.33475"/>
             <frameType>1</frameType>
             <text>zwischen Tönen 
 hin und her kippen
@@ -6630,17 +6674,18 @@ hin und her kippen
           </voice>
         <voice/>
         <voice>
-          <Dynamic>
-            <subtype>mp</subtype>
-            <velocity>64</velocity>
-            <minDistance>0.0779255</minDistance>
-            <size>10</size>
-            <offset x="-2.31205" y="2.86821"/>
-            </Dynamic>
           <StaffText>
             <visible>0</visible>
             <text>14</text>
             </StaffText>
+          <Dynamic>
+            <subtype>mf</subtype>
+            <velocity>80</velocity>
+            <autoplace>0</autoplace>
+            <visible>0</visible>
+            <size>10</size>
+            <offset x="-2.84184" y="2.78819"/>
+            </Dynamic>
           <Chord>
             <durationType>whole</durationType>
             <Note>
@@ -6674,6 +6719,19 @@ hin und her kippen
               <visible>0</visible>
               </Tremolo>
             </Chord>
+          <location>
+            <fractions>-1/4</fractions>
+            </location>
+          <Dynamic>
+            <subtype>mp</subtype>
+            <velocity>64</velocity>
+            <visible>0</visible>
+            <size>10</size>
+            <offset x="0.591318" y="2.18573"/>
+            </Dynamic>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
           <Chord>
             <durationType>whole</durationType>
             <duration>1/2</duration>
@@ -8053,9 +8111,15 @@ hin und her kippen
             </StaffText>
           <StaffText>
             <size>8</size>
-            <offset x="0.682097" y="-9.52667"/>
+            <offset x="0.68" y="-10.03"/>
             <frameType>1</frameType>
             <text>klare Brüche</text>
+            </StaffText>
+          <StaffText>
+            <size>8</size>
+            <italic>1</italic>
+            <offset x="-6" y="-8"/>
+            <text>wild</text>
             </StaffText>
           <Spanner type="Trill">
             <Trill>
@@ -8587,6 +8651,25 @@ hin und her kippen
                 </location>
               </prev>
             </Spanner>
+          <Spanner type="TextLine">
+            <TextLine>
+              <endHookType>1</endHookType>
+              <beginText>rit.</beginText>
+              <beginFontSize>15</beginFontSize>
+              <beginFontStyle>1</beginFontStyle>
+              <lineStyle>2</lineStyle>
+              <Segment>
+                <subtype>0</subtype>
+                <offset x="0" y="-6.5"/>
+                <off2 x="0" y="0"/>
+                </Segment>
+              </TextLine>
+            <next>
+              <location>
+                <measures>1</measures>
+                </location>
+              </next>
+            </Spanner>
           <Rest>
             <durationType>measure</durationType>
             <duration>4/4</duration>
@@ -8599,6 +8682,19 @@ hin und her kippen
             <sigN>5</sigN>
             <sigD>4</sigD>
             </TimeSig>
+          <Tempo>
+            <tempo>1.3333333333333333</tempo>
+            <followText>1</followText>
+            <visible>0</visible>
+            <text><sym>metNoteQuarterUp</sym> = 80</text>
+            </Tempo>
+          <Spanner type="TextLine">
+            <prev>
+              <location>
+                <measures>-1</measures>
+                </location>
+              </prev>
+            </Spanner>
           <Rest>
             <durationType>quarter</durationType>
             </Rest>
@@ -9033,6 +9129,11 @@ hin und her kippen
         </Measure>
       <Measure>
         <voice>
+          <Tempo>
+            <tempo>1.5833333333333333</tempo>
+            <offset x="-5.22882" y="-4.69349"/>
+            <text>a tempo</text>
+            </Tempo>
           <Rest>
             <durationType>quarter</durationType>
             </Rest>
@@ -9043,15 +9144,16 @@ hin und her kippen
             <visible>0</visible>
             <text>p8</text>
             </StaffText>
-          <Dynamic>
-            <subtype>mp</subtype>
-            <velocity>64</velocity>
-            </Dynamic>
           <StaffText>
             <minDistance>0.200313</minDistance>
             <offset x="-0.6" y="-1.5"/>
             <text>2-1</text>
             </StaffText>
+          <Dynamic>
+            <subtype>sfz</subtype>
+            <velocity>112</velocity>
+            <size>10</size>
+            </Dynamic>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
@@ -9068,6 +9170,17 @@ hin und her kippen
             <durationType>quarter</durationType>
             </Rest>
           </voice>
+        <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>41</pitch>
+              <tpc>13</tpc>
+              <play>0</play>
+              </Note>
+            </Chord>
+          </voice>
         </Measure>
       <Measure>
         <voice>
@@ -9079,6 +9192,11 @@ hin und her kippen
             <offset x="-0.28" y="-1"/>
             <text>1-2</text>
             </StaffText>
+          <Dynamic>
+            <subtype>sfz</subtype>
+            <velocity>112</velocity>
+            <size>10</size>
+            </Dynamic>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
@@ -9100,6 +9218,11 @@ hin und her kippen
             <offset x="-0.06" y="-1"/>
             <text>2-1</text>
             </StaffText>
+          <Dynamic>
+            <subtype>sfz</subtype>
+            <velocity>112</velocity>
+            <size>10</size>
+            </Dynamic>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
@@ -9111,26 +9234,33 @@ hin und her kippen
         </Measure>
       <Measure>
         <voice>
-          <Dynamic>
-            <subtype>p</subtype>
-            <velocity>49</velocity>
-            <offset x="4.98609" y="2.11729"/>
-            </Dynamic>
           <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
+            <durationType>quarter</durationType>
             </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <StaffText>
-            <size>8</size>
-            <offset x="-1.39648" y="-0.615969"/>
-            <text>viel Luft</text>
-            </StaffText>
+          <Dynamic>
+            <subtype>ppp</subtype>
+            <velocity>16</velocity>
+            <visible>0</visible>
+            </Dynamic>
+          <Spanner type="HairPin">
+            <HairPin>
+              <subtype>0</subtype>
+              <hairpinCircledTip>1</hairpinCircledTip>
+              <Segment>
+                <subtype>0</subtype>
+                <offset x="0" y="2"/>
+                <off2 x="-2.47425" y="0"/>
+                </Segment>
+              </HairPin>
+            <next>
+              <location>
+                <measures>1</measures>
+                </location>
+              </next>
+            </Spanner>
           <Chord>
-            <durationType>whole</durationType>
+            <dots>1</dots>
+            <durationType>half</durationType>
             <Note>
               <pitch>59</pitch>
               <tpc>19</tpc>
@@ -9141,9 +9271,89 @@ hin und her kippen
         </Measure>
       <Measure>
         <voice>
+          <Dynamic>
+            <subtype>sfz</subtype>
+            <velocity>112</velocity>
+            <size>10</size>
+            </Dynamic>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <pitch>59</pitch>
+              <tpc>19</tpc>
+              <head>slashed1</head>
+              </Note>
+            </Chord>
+          <Spanner type="HairPin">
+            <prev>
+              <location>
+                <measures>-1</measures>
+                </location>
+              </prev>
+            </Spanner>
           <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
+            <durationType>quarter</durationType>
+            </Rest>
+          <Dynamic>
+            <subtype>ppp</subtype>
+            <velocity>16</velocity>
+            <visible>0</visible>
+            </Dynamic>
+          <Spanner type="HairPin">
+            <HairPin>
+              <subtype>0</subtype>
+              <hairpinCircledTip>1</hairpinCircledTip>
+              <Segment>
+                <subtype>0</subtype>
+                <offset x="0" y="2"/>
+                <off2 x="-2.57694" y="0"/>
+                </Segment>
+              </HairPin>
+            <next>
+              <location>
+                <measures>1</measures>
+                <fractions>-1/4</fractions>
+                </location>
+              </next>
+            </Spanner>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <pitch>59</pitch>
+              <tpc>19</tpc>
+              <head>slashed1</head>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Dynamic>
+            <subtype>sfz</subtype>
+            <velocity>112</velocity>
+            <size>10</size>
+            </Dynamic>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <pitch>59</pitch>
+              <tpc>19</tpc>
+              <head>slashed1</head>
+              </Note>
+            </Chord>
+          <Spanner type="HairPin">
+            <prev>
+              <location>
+                <measures>-1</measures>
+                <fractions>1/4</fractions>
+                </location>
+              </prev>
+            </Spanner>
+          <Rest>
+            <durationType>quarter</durationType>
+            </Rest>
+          <Rest>
+            <durationType>half</durationType>
             </Rest>
           </voice>
         </Measure>
@@ -9156,6 +9366,7 @@ hin und her kippen
           <Dynamic>
             <subtype>mp</subtype>
             <velocity>64</velocity>
+            <size>10</size>
             </Dynamic>
           <Chord>
             <durationType>quarter</durationType>
@@ -9299,6 +9510,10 @@ hin und her kippen
             <sigN>5</sigN>
             <sigD>4</sigD>
             </TimeSig>
+          <Dynamic>
+            <subtype>f</subtype>
+            <velocity>96</velocity>
+            </Dynamic>
           <Rest>
             <durationType>quarter</durationType>
             </Rest>
@@ -9461,12 +9676,13 @@ hin und her kippen
             <color r="255" g="0" b="0" a="255"/>
             <text>M</text>
             </StaffText>
-          <Dynamic>
-            <subtype>f</subtype>
-            <velocity>96</velocity>
-            <minDistance>7.16272e-16</minDistance>
-            <offset x="0" y="2.61951"/>
-            </Dynamic>
+          <StaffText>
+            <size>8</size>
+            <color r="255" g="0" b="0" a="255"/>
+            <offset x="-3.01087" y="-1.9039"/>
+            <frameType>1</frameType>
+            <text>gleicher wie T113</text>
+            </StaffText>
           <Chord>
             <durationType>whole</durationType>
             <Note>
@@ -9506,6 +9722,7 @@ hin und her kippen
                 </Spanner>
               <pitch>59</pitch>
               <tpc>19</tpc>
+              <head>slashed1</head>
               </Note>
             </Chord>
           <Rest>
@@ -9972,6 +10189,7 @@ hin und her kippen
           <Dynamic>
             <subtype>ff</subtype>
             <velocity>112</velocity>
+            <size>10</size>
             </Dynamic>
           <Spanner type="TextLine">
             <TextLine>
@@ -10278,6 +10496,11 @@ hin und her kippen
         </Measure>
       <Measure>
         <voice>
+          <Dynamic>
+            <subtype>mf</subtype>
+            <velocity>80</velocity>
+            <offset x="2.5" y="2.5"/>
+            </Dynamic>
           <Rest>
             <durationType>measure</durationType>
             <duration>4/4</duration>
@@ -10495,8 +10718,14 @@ hin und her kippen
           </voice>
         </Measure>
       <Measure>
-        <stretch>0.9</stretch>
+        <stretch>0.7</stretch>
         <voice>
+          <Dynamic>
+            <subtype>ff</subtype>
+            <velocity>112</velocity>
+            <size>10</size>
+            <offset x="0" y="2.4"/>
+            </Dynamic>
           <Rest>
             <durationType>half</durationType>
             </Rest>
@@ -10562,17 +10791,9 @@ hin und her kippen
             </Chord>
           <endTuplet/>
           </voice>
-        <voice/>
-        <voice/>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
         </Measure>
       <Measure>
-        <stretch>0.9</stretch>
+        <stretch>0.7</stretch>
         <voice>
           <Tuplet>
             <normalNotes>4</normalNotes>
@@ -10637,7 +10858,7 @@ hin und her kippen
           </voice>
         </Measure>
       <Measure>
-        <stretch>0.9</stretch>
+        <stretch>0.7</stretch>
         <voice>
           <TimeSig>
             <sigN>3</sigN>
@@ -10648,6 +10869,7 @@ hin und her kippen
             <text>bb5</text>
             </StaffText>
           <StaffText>
+            <visible>0</visible>
             <size>8</size>
             <offset x="2.74306" y="-4.08343"/>
             <frameType>1</frameType>
@@ -10738,6 +10960,9 @@ hin und her kippen
             </Chord>
           <Chord>
             <durationType>half</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
             <Note>
               <Spanner type="Tie">
                 <prev>
@@ -10748,12 +10973,15 @@ hin und her kippen
                 </Spanner>
               <pitch>60</pitch>
               <tpc>14</tpc>
+              <small>1</small>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
               </Note>
             </Chord>
           </voice>
         </Measure>
       <Measure>
-        <stretch>1.2</stretch>
         <voice>
           <TimeSig>
             <sigN>6</sigN>
@@ -10812,7 +11040,7 @@ hin und her kippen
         <voice/>
         <voice>
           <StaffText>
-            <minDistance>0.209677</minDistance>
+            <minDistance>-4.58407</minDistance>
             <offset x="3.5" y="-1.5"/>
             <text>3/4</text>
             </StaffText>
@@ -10836,19 +11064,12 @@ hin und her kippen
           </voice>
         </Measure>
       <Measure>
-        <stretch>0.9</stretch>
+        <stretch>0.7</stretch>
         <voice>
           <TimeSig>
             <sigN>4</sigN>
             <sigD>4</sigD>
             </TimeSig>
-          <Dynamic>
-            <subtype>ff</subtype>
-            <velocity>112</velocity>
-            <minDistance>-0.0282534</minDistance>
-            <size>10</size>
-            <offset x="0.55859" y="2.63965"/>
-            </Dynamic>
           <Spanner type="Trill">
             <Trill>
               <subtype>trill</subtype>
@@ -10860,11 +11081,21 @@ hin und her kippen
                 </location>
               </next>
             </Spanner>
+          <Spanner type="Ottava">
+            <Ottava>
+              <subtype>8va</subtype>
+              </Ottava>
+            <next>
+              <location>
+                <measures>1</measures>
+                </location>
+              </next>
+            </Spanner>
           <Chord>
             <durationType>eighth</durationType>
             <Note>
-              <pitch>72</pitch>
-              <tpc>14</tpc>
+              <pitch>83</pitch>
+              <tpc>19</tpc>
               </Note>
             </Chord>
           <Rest>
@@ -10873,8 +11104,8 @@ hin und her kippen
           <Chord>
             <durationType>eighth</durationType>
             <Note>
-              <pitch>72</pitch>
-              <tpc>14</tpc>
+              <pitch>83</pitch>
+              <tpc>19</tpc>
               </Note>
             </Chord>
           <Rest>
@@ -10883,8 +11114,8 @@ hin und her kippen
           <Chord>
             <durationType>eighth</durationType>
             <Note>
-              <pitch>72</pitch>
-              <tpc>14</tpc>
+              <pitch>83</pitch>
+              <tpc>19</tpc>
               </Note>
             </Chord>
           <Rest>
@@ -10923,6 +11154,13 @@ hin und her kippen
             <frameType>1</frameType>
             <text>klare Brüche</text>
             </StaffText>
+          <Spanner type="Ottava">
+            <prev>
+              <location>
+                <measures>-1</measures>
+                </location>
+              </prev>
+            </Spanner>
           <Spanner type="Trill">
             <Trill>
               <subtype>trill</subtype>
@@ -11635,7 +11873,9 @@ hin und her kippen
       <Measure>
         <voice>
           <StaffText>
-            <offset x="-1.41074" y="-5.82282"/>
+            <size>8</size>
+            <offset x="2.83658" y="-5.68581"/>
+            <frameType>1</frameType>
             <text>whistletones</text>
             </StaffText>
           <RehearsalMark>
@@ -11646,8 +11886,9 @@ hin und her kippen
           <Tempo>
             <tempo>1.0833299999999999</tempo>
             <followText>1</followText>
-            <minDistance>0.264876</minDistance>
-            <offset x="-3.18972" y="-7.98286"/>
+            <autoplace>0</autoplace>
+            <minDistance>0.200289</minDistance>
+            <offset x="-7.45248" y="-9.24891"/>
             <text><b></b><font face="ScoreText"></font><b><font face="Edwin"></font> = 65-70
 </b></text>
             </Tempo>
@@ -11720,9 +11961,10 @@ hin und her kippen
             <sigD>4</sigD>
             </TimeSig>
           <StaffText>
+            <minDistance>0.180309</minDistance>
             <size>8</size>
             <italic>1</italic>
-            <offset x="-4.65521" y="-7.8946"/>
+            <offset x="-11.7797" y="-7.74837"/>
             <text>ruhig, zerbrechlich</text>
             </StaffText>
           <Chord>
@@ -12489,6 +12731,7 @@ hin und her kippen
           </voice>
         </Measure>
       <Measure>
+        <stretch>0.9</stretch>
         <voice>
           <Chord>
             <durationType>half</durationType>
@@ -12612,6 +12855,7 @@ hin und her kippen
           </voice>
         </Measure>
       <Measure>
+        <stretch>0.9</stretch>
         <voice>
           <Chord>
             <durationType>half</durationType>
@@ -12741,6 +12985,7 @@ hin und her kippen
           </voice>
         </Measure>
       <Measure>
+        <stretch>0.9</stretch>
         <voice>
           <Chord>
             <durationType>half</durationType>
@@ -12871,6 +13116,10 @@ hin und her kippen
           </voice>
         </Measure>
       <Measure>
+        <stretch>0.9</stretch>
+        <LayoutBreak>
+          <subtype>line</subtype>
+          </LayoutBreak>
         <voice>
           <Chord>
             <durationType>half</durationType>
@@ -13419,10 +13668,6 @@ hin und her kippen
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <visible>0</visible>
-          <subtype>line</subtype>
-          </LayoutBreak>
         <voice>
           <StaffText>
             <visible>0</visible>
@@ -13483,18 +13728,35 @@ hin und her kippen
           </voice>
         </Measure>
       <Measure>
+        <LayoutBreak>
+          <subtype>line</subtype>
+          </LayoutBreak>
         <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <duration>1/4</duration>
+            <Note>
+              <Accidental>
+                <subtype>accidentalSharp</subtype>
+                </Accidental>
+              <pitch>66</pitch>
+              <tpc>20</tpc>
+              <tuning>-200</tuning>
+              </Note>
+            <Tremolo>
+              <subtype>c8</subtype>
+              </Tremolo>
+            </Chord>
+          <Chord>
+            <durationType>half</durationType>
+            <duration>1/4</duration>
+            <Note>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              </Note>
+            </Chord>
           <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        <voice/>
-        <voice/>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
+            <durationType>half</durationType>
             </Rest>
           </voice>
         </Measure>
@@ -13504,17 +13766,13 @@ hin und her kippen
             <dots>2</dots>
             <durationType>half</durationType>
             <Note>
-              <pitch>74</pitch>
-              <tpc>16</tpc>
+              <pitch>65</pitch>
+              <tpc>13</tpc>
               </Note>
             </Chord>
-          <Chord>
+          <Rest>
             <durationType>eighth</durationType>
-            <Note>
-              <pitch>74</pitch>
-              <tpc>16</tpc>
-              </Note>
-            </Chord>
+            </Rest>
           </voice>
         </Measure>
       <Measure>
@@ -13528,17 +13786,16 @@ hin und her kippen
             <dots>2</dots>
             <durationType>half</durationType>
             <Note>
-              <pitch>74</pitch>
-              <tpc>16</tpc>
+              <Accidental>
+                <subtype>accidentalSharp</subtype>
+                </Accidental>
+              <pitch>63</pitch>
+              <tpc>23</tpc>
               </Note>
             </Chord>
-          <Chord>
+          <Rest>
             <durationType>eighth</durationType>
-            <Note>
-              <pitch>74</pitch>
-              <tpc>16</tpc>
-              </Note>
-            </Chord>
+            </Rest>
           </voice>
         </Measure>
       <Measure>
@@ -13547,17 +13804,35 @@ hin und her kippen
             <dots>2</dots>
             <durationType>half</durationType>
             <Note>
-              <pitch>74</pitch>
-              <tpc>16</tpc>
+              <Accidental>
+                <subtype>accidentalSharp</subtype>
+                </Accidental>
+              <pitch>61</pitch>
+              <tpc>21</tpc>
+              <head>slashed1</head>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <beginText>immer mehr Luftanteil</beginText>
+                  <beginFontSize>8</beginFontSize>
+                  <endText>&gt;</endText>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="-42.2407" y="-6.45913"/>
+                    <off2 x="40.1902" y="0"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
               </Note>
             </Chord>
-          <Chord>
+          <Rest>
             <durationType>eighth</durationType>
-            <Note>
-              <pitch>74</pitch>
-              <tpc>16</tpc>
-              </Note>
-            </Chord>
+            </Rest>
           </voice>
         </Measure>
       <Measure>
@@ -13569,17 +13844,25 @@ hin und her kippen
             <dots>2</dots>
             <durationType>half</durationType>
             <Note>
-              <pitch>74</pitch>
-              <tpc>16</tpc>
+              <Accidental>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                </Accidental>
+              <pitch>60</pitch>
+              <tpc>14</tpc>
+              <head>slashed1</head>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             </Chord>
-          <Chord>
+          <Rest>
             <durationType>eighth</durationType>
-            <Note>
-              <pitch>74</pitch>
-              <tpc>16</tpc>
-              </Note>
-            </Chord>
+            </Rest>
           </voice>
         </Measure>
       <Measure>
@@ -15820,58 +16103,177 @@ hin und her kippen
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>2</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-2</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <dots>1</dots>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>3/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="4.84103" y="0"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>3</measures>
+                    <fractions>-3/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-3/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-3</measures>
+                    <fractions>3/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
@@ -21000,7 +21402,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="3.49119" y="0"/>
+                    <off2 x="-0.173501" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -21025,6 +21427,18 @@ hin und her kippen
               <pitch>76</pitch>
               <tpc>18</tpc>
               <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-3/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
                 <prev>
                   <location>
                     <fractions>-3/4</fractions>
@@ -21037,42 +21451,354 @@ hin und her kippen
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <dots>1</dots>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>3/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>3/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="2.1465" y="0"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>1/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-3/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-1/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <dots>2</dots>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>7/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-7/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-7/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <dots>2</dots>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>7/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>7/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-7/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-7/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <dots>2</dots>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>7/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>7/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-7/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-7/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <dots>2</dots>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>7/8</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>7/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>16th</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="3.51099" y="0"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>1/16</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-7/8</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>16th</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-1/16</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
@@ -22450,6 +23176,17 @@ hin und her kippen
         </Measure>
       <Measure>
         <voice>
+          <Spanner type="TextLine">
+            <TextLine>
+              <endHookType>1</endHookType>
+              <beginText>Staff</beginText>
+              </TextLine>
+            <next>
+              <location>
+                <measures>1</measures>
+                </location>
+              </next>
+            </Spanner>
           <Rest>
             <durationType>measure</durationType>
             <duration>4/4</duration>
@@ -22462,6 +23199,13 @@ hin und her kippen
             <sigN>5</sigN>
             <sigD>4</sigD>
             </TimeSig>
+          <Spanner type="TextLine">
+            <prev>
+              <location>
+                <measures>-1</measures>
+                </location>
+              </prev>
+            </Spanner>
           <Rest>
             <durationType>whole</durationType>
             </Rest>
@@ -23178,6 +23922,7 @@ hin und her kippen
       <Measure>
         <voice>
           <Rest>
+            <visible>0</visible>
             <durationType>measure</durationType>
             <duration>4/4</duration>
             </Rest>
@@ -23193,24 +23938,61 @@ hin und her kippen
               <tpc>16</tpc>
               <small>1</small>
               <headType>quarter</headType>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.2</lineWidth>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="11.527" y="0"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
               </Note>
             </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <offset x="0" y="0.2"/>
+              <visible>0</visible>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <small>1</small>
+              <headType>quarter</headType>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <offset x="0" y="0.2"/>
+              <visible>0</visible>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <small>1</small>
+              <headType>quarter</headType>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
@@ -24320,6 +25102,17 @@ hin und her kippen
         </Measure>
       <Measure>
         <voice>
+          <Spanner type="TextLine">
+            <TextLine>
+              <endHookType>1</endHookType>
+              <beginText>Staff</beginText>
+              </TextLine>
+            <next>
+              <location>
+                <measures>1</measures>
+                </location>
+              </next>
+            </Spanner>
           <Rest>
             <durationType>measure</durationType>
             <duration>4/4</duration>
@@ -24332,6 +25125,13 @@ hin und her kippen
             <sigN>5</sigN>
             <sigD>4</sigD>
             </TimeSig>
+          <Spanner type="TextLine">
+            <prev>
+              <location>
+                <measures>-1</measures>
+                </location>
+              </prev>
+            </Spanner>
           <Rest>
             <durationType>whole</durationType>
             </Rest>
@@ -24835,6 +25635,7 @@ hin und her kippen
       <Measure>
         <voice>
           <Rest>
+            <visible>0</visible>
             <durationType>measure</durationType>
             <duration>4/4</duration>
             </Rest>
@@ -24843,6 +25644,7 @@ hin und her kippen
       <Measure>
         <voice>
           <Rest>
+            <visible>0</visible>
             <durationType>whole</durationType>
             </Rest>
           </voice>
@@ -25375,7 +26177,6 @@ hin und her kippen
             </Chord>
           <StaffText>
             <size>8</size>
-            <italic>1</italic>
             <offset x="-0.511347" y="-3.20334"/>
             <text>molto vib.</text>
             </StaffText>
@@ -25471,7 +26272,6 @@ hin und her kippen
             </Chord>
           <StaffText>
             <size>8</size>
-            <italic>1</italic>
             <offset x="-1.11971" y="-3.18509"/>
             <text>non vib.</text>
             </StaffText>
@@ -26011,6 +26811,12 @@ hin und her kippen
             <subtype>pp</subtype>
             <velocity>33</velocity>
             </Dynamic>
+          <StaffText>
+            <size>8</size>
+            <italic>1</italic>
+            <offset x="-0.102526" y="-2.86577"/>
+            <text>zärtlich</text>
+            </StaffText>
           <Chord>
             <dots>1</dots>
             <durationType>quarter</durationType>
@@ -26051,8 +26857,7 @@ hin und her kippen
         <voice>
           <StaffText>
             <size>8</size>
-            <italic>1</italic>
-            <text>zärtlich</text>
+            <text>vib.</text>
             </StaffText>
           <Chord>
             <durationType>whole</durationType>
@@ -26093,6 +26898,10 @@ hin und her kippen
               <tpc>15</tpc>
               </Note>
             </Chord>
+          <StaffText>
+            <size>8</size>
+            <text>non vib.</text>
+            </StaffText>
           <Chord>
             <dots>1</dots>
             <durationType>half</durationType>
@@ -26800,6 +27609,12 @@ hin und her kippen
             <velocity>16</velocity>
             <visible>0</visible>
             </Dynamic>
+          <StaffText>
+            <visible>0</visible>
+            <italic>1</italic>
+            <offset x="-1.21936" y="-2.04912"/>
+            <text>bestimmt</text>
+            </StaffText>
           <Spanner type="HairPin">
             <HairPin>
               <subtype>0</subtype>
@@ -26816,6 +27631,11 @@ hin und her kippen
             <dots>1</dots>
             <durationType>half</durationType>
             <Note>
+              <Symbol>
+                <name>arrowBlackDown</name>
+                <font>Bravura</font>
+                <offset x="8" y="-5.5"/>
+                </Symbol>
               <pitch>50</pitch>
               <tpc>16</tpc>
               </Note>
@@ -26856,6 +27676,22 @@ hin und her kippen
             <Note>
               <pitch>62</pitch>
               <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <endText>&gt;</endText>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="-13.0617" y="-2.32918"/>
+                    <off2 x="3.37959" y="0"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>1/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
               </Note>
             </Chord>
           <Chord>
@@ -26871,6 +27707,13 @@ hin und her kippen
             <Note>
               <pitch>62</pitch>
               <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             </Chord>
           <Chord>
@@ -27493,6 +28336,11 @@ und abrupt wegnehmen
         </Measure>
       <Measure>
         <voice>
+          <StaffText>
+            <size>8</size>
+            <italic>1</italic>
+            <text>ruhig</text>
+            </StaffText>
           <Rest>
             <durationType>measure</durationType>
             <duration>4/4</duration>
@@ -28025,6 +28873,7 @@ und abrupt wegnehmen
             </Dynamic>
           <Fermata>
             <subtype>fermataAbove</subtype>
+            <visible>0</visible>
             </Fermata>
           <Spanner type="HairPin">
             <prev>
@@ -28438,6 +29287,9 @@ und abrupt wegnehmen
                 </Spanner>
               </Note>
             </Chord>
+          <Fermata>
+            <subtype>fermataAbove</subtype>
+            </Fermata>
           <Rest>
             <durationType>half</durationType>
             </Rest>
@@ -29784,10 +30636,6 @@ und abrupt wegnehmen
           <Rest>
             <durationType>half</durationType>
             </Rest>
-          <Dynamic>
-            <subtype>mf</subtype>
-            <velocity>80</velocity>
-            </Dynamic>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
@@ -30033,6 +30881,12 @@ und abrupt wegnehmen
             <subtype>mf</subtype>
             <velocity>80</velocity>
             </Dynamic>
+          <StaffText>
+            <size>8</size>
+            <italic>1</italic>
+            <offset x="-6" y="-2"/>
+            <text>wild</text>
+            </StaffText>
           <Chord>
             <durationType>quarter</durationType>
             <Spanner type="Slur">
@@ -30565,8 +31419,16 @@ und abrupt wegnehmen
         </Measure>
       <Measure>
         <voice>
+          <Dynamic>
+            <subtype>sfz</subtype>
+            <velocity>112</velocity>
+            </Dynamic>
           <Chord>
-            <durationType>half</durationType>
+            <durationType>quarter</durationType>
+            <Articulation>
+              <subtype>articStaccatissimoAbove</subtype>
+              <autoplace>0</autoplace>
+              </Articulation>
             <Note>
               <Accidental>
                 <bracket>1</bracket>
@@ -30584,6 +31446,7 @@ und abrupt wegnehmen
                 </Spanner>
               <pitch>69</pitch>
               <tpc>17</tpc>
+              <play>0</play>
               </Note>
             <Note>
               <Accidental>
@@ -30603,18 +31466,176 @@ und abrupt wegnehmen
               <pitch>76</pitch>
               <tpc>18</tpc>
               <head>diamond</head>
+              <play>0</play>
               <headType>half</headType>
               </Note>
             </Chord>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Articulation>
+              <subtype>articStaccatissimoAbove</subtype>
+              <autoplace>0</autoplace>
+              </Articulation>
+            <Note>
+              <Accidental>
+                <bracket>1</bracket>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                <visible>0</visible>
+                </Accidental>
+              <pitch>69</pitch>
+              <tpc>17</tpc>
+              <play>0</play>
+              </Note>
+            <Note>
+              <Accidental>
+                <bracket>1</bracket>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                <visible>0</visible>
+                </Accidental>
+              <pitch>76</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Articulation>
+              <subtype>articStaccatissimoAbove</subtype>
+              <autoplace>0</autoplace>
+              </Articulation>
+            <Note>
+              <Accidental>
+                <bracket>1</bracket>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                <visible>0</visible>
+                </Accidental>
+              <pitch>69</pitch>
+              <tpc>17</tpc>
+              <play>0</play>
+              </Note>
+            <Note>
+              <Accidental>
+                <bracket>1</bracket>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                <visible>0</visible>
+                </Accidental>
+              <pitch>76</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Articulation>
+              <subtype>articStaccatissimoAbove</subtype>
+              <autoplace>0</autoplace>
+              </Articulation>
+            <Note>
+              <Accidental>
+                <bracket>1</bracket>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                <visible>0</visible>
+                </Accidental>
+              <pitch>69</pitch>
+              <tpc>17</tpc>
+              <play>0</play>
+              </Note>
+            <Note>
+              <Accidental>
+                <bracket>1</bracket>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                <visible>0</visible>
+                </Accidental>
+              <pitch>76</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
           </voice>
         <voice/>
         <voice/>
         <voice>
           <Chord>
-            <durationType>half</durationType>
+            <durationType>quarter</durationType>
+            <Articulation>
+              <subtype>articStaccatissimoAbove</subtype>
+              <visible>0</visible>
+              </Articulation>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <Accidental>
+                <bracket>1</bracket>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                <visible>0</visible>
+                </Accidental>
+              <pitch>88</pitch>
+              <tpc>18</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Articulation>
+              <subtype>articStaccatissimoAbove</subtype>
+              <visible>0</visible>
+              </Articulation>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <Accidental>
+                <bracket>1</bracket>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                <visible>0</visible>
+                </Accidental>
+              <pitch>88</pitch>
+              <tpc>18</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Articulation>
+              <subtype>articStaccatissimoAbove</subtype>
+              <visible>0</visible>
+              </Articulation>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <Accidental>
+                <bracket>1</bracket>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                <visible>0</visible>
+                </Accidental>
+              <pitch>88</pitch>
+              <tpc>18</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Articulation>
+              <subtype>articStaccatissimoAbove</subtype>
+              <visible>0</visible>
+              </Articulation>
             <Stem>
               <visible>0</visible>
               </Stem>
@@ -30642,14 +31663,62 @@ und abrupt wegnehmen
             <subtype>p</subtype>
             <velocity>49</velocity>
             </Dynamic>
+          <Spanner type="HairPin">
+            <HairPin>
+              <subtype>0</subtype>
+              </HairPin>
+            <next>
+              <location>
+                <measures>1</measures>
+                </location>
+              </next>
+            </Spanner>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <Accidental>
+                <bracket>1</bracket>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                <visible>0</visible>
+                </Accidental>
+              <pitch>69</pitch>
+              <tpc>17</tpc>
+              <play>0</play>
+              </Note>
+            <Note>
+              <Accidental>
+                <bracket>1</bracket>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                <visible>0</visible>
+                </Accidental>
+              <pitch>76</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Dynamic>
+            <subtype>p</subtype>
+            <velocity>49</velocity>
+            <visible>0</visible>
+            </Dynamic>
           <Spanner type="Trill">
             <Trill>
               <subtype>prallprall</subtype>
               <lineWidth>0.134047</lineWidth>
+              <Segment>
+                <subtype>0</subtype>
+                <offset x="-0.277108" y="-0.5"/>
+                <off2 x="-7.49249" y="0"/>
+                </Segment>
               </Trill>
             <next>
               <location>
-                <measures>2</measures>
+                <measures>3</measures>
+                <fractions>-1/2</fractions>
                 </location>
               </next>
             </Spanner>
@@ -30664,15 +31733,11 @@ und abrupt wegnehmen
               <tpc>22</tpc>
               </Note>
             </Chord>
-          <Chord>
-            <durationType>half</durationType>
-            <Note>
-              <pitch>56</pitch>
-              <tpc>22</tpc>
-              </Note>
-            </Chord>
           </voice>
         <voice>
+          <location>
+            <fractions>1/2</fractions>
+            </location>
           <StaffText>
             <size>8</size>
             <offset x="-2.8185" y="-2.95719"/>
@@ -30700,23 +31765,29 @@ und abrupt wegnehmen
               <small>1</small>
               </Note>
             </Chord>
+          </voice>
+        <voice/>
+        <voice>
           <Chord>
             <durationType>half</durationType>
             <Stem>
               <visible>0</visible>
               </Stem>
             <Note>
-              <Symbol>
-                <name>noteheadParenthesisLeft</name>
-                </Symbol>
-              <Symbol>
-                <name>noteheadParenthesisRight</name>
-                </Symbol>
-              <pitch>59</pitch>
-              <tpc>19</tpc>
-              <small>1</small>
+              <visible>0</visible>
+              <Accidental>
+                <bracket>1</bracket>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                <visible>0</visible>
+                </Accidental>
+              <pitch>88</pitch>
+              <tpc>18</tpc>
               </Note>
             </Chord>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
           </voice>
         </Measure>
       <Measure>
@@ -30725,6 +31796,13 @@ und abrupt wegnehmen
             <sigN>3</sigN>
             <sigD>4</sigD>
             </TimeSig>
+          <Spanner type="HairPin">
+            <prev>
+              <location>
+                <measures>-1</measures>
+                </location>
+              </prev>
+            </Spanner>
           <Chord>
             <dots>1</dots>
             <durationType>half</durationType>
@@ -30768,13 +31846,6 @@ und abrupt wegnehmen
             <sigN>4</sigN>
             <sigD>4</sigD>
             </TimeSig>
-          <Spanner type="Trill">
-            <prev>
-              <location>
-                <measures>-2</measures>
-                </location>
-              </prev>
-            </Spanner>
           <Chord>
             <durationType>whole</durationType>
             <Note>
@@ -30817,6 +31888,14 @@ und abrupt wegnehmen
             <frameType>1</frameType>
             <text>Vibrato nur mit oberem Finger</text>
             </StaffText>
+          <Spanner type="Trill">
+            <prev>
+              <location>
+                <measures>-3</measures>
+                <fractions>1/2</fractions>
+                </location>
+              </prev>
+            </Spanner>
           <Chord>
             <durationType>whole</durationType>
             <Note>
@@ -30872,8 +31951,6 @@ und abrupt wegnehmen
             <offset x="-1.99182" y="-0.192015"/>
             <text>II</text>
             </StaffText>
-          <Beam>
-            </Beam>
           <Chord>
             <durationType>eighth</durationType>
             <Articulation>
@@ -30918,238 +31995,78 @@ und abrupt wegnehmen
           <Rest>
             <durationType>quarter</durationType>
             </Rest>
-          </voice>
-        <voice/>
-        <voice/>
-        <voice>
-          <location>
-            <fractions>1/2</fractions>
-            </location>
-          <Beam>
-            <visible>0</visible>
-            </Beam>
-          <Chord>
-            <durationType>eighth</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <visible>0</visible>
-              <pitch>83</pitch>
-              <tpc>19</tpc>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>eighth</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <visible>0</visible>
-              <pitch>84</pitch>
-              <tpc>14</tpc>
-              </Note>
-            </Chord>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <Accidental>
-                <subtype>accidentalFlat</subtype>
-                </Accidental>
-              <pitch>68</pitch>
-              <tpc>10</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <Accidental>
-                <bracket>1</bracket>
-                <role>1</role>
-                <subtype>accidentalNatural</subtype>
-                </Accidental>
-              <pitch>69</pitch>
-              <tpc>17</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <Accidental>
-                <subtype>accidentalFlat</subtype>
-                </Accidental>
-              <pitch>70</pitch>
-              <tpc>12</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <pitch>72</pitch>
-              <tpc>14</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
-              </Note>
-            </Chord>
-          </voice>
-        <voice>
-          <Chord>
-            <durationType>whole</durationType>
-            <Note>
-              <pitch>65</pitch>
-              <tpc>13</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          </voice>
-        <voice/>
-        <voice>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <visible>0</visible>
-              <pitch>96</pitch>
-              <tpc>14</tpc>
-              <small>1</small>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <visible>0</visible>
-              <pitch>93</pitch>
-              <tpc>17</tpc>
-              <small>1</small>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <visible>0</visible>
-              <pitch>89</pitch>
-              <tpc>13</tpc>
-              <small>1</small>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <visible>0</visible>
-              <pitch>84</pitch>
-              <tpc>14</tpc>
-              <small>1</small>
-              </Note>
-            </Chord>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <Accidental>
-                <subtype>accidentalFlat</subtype>
-                </Accidental>
-              <pitch>68</pitch>
-              <tpc>10</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <Accidental>
-                <bracket>1</bracket>
-                <role>1</role>
-                <subtype>accidentalNatural</subtype>
-                </Accidental>
-              <pitch>69</pitch>
-              <tpc>17</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <Accidental>
-                <subtype>accidentalFlat</subtype>
-                </Accidental>
-              <pitch>70</pitch>
-              <tpc>12</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <pitch>72</pitch>
-              <tpc>14</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
-              </Note>
-            </Chord>
           <Clef>
             <concertClefType>G</concertClefType>
             <transposingClefType>G</transposingClefType>
             </Clef>
           </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <Accidental>
+                <subtype>accidentalFlat</subtype>
+                </Accidental>
+              <pitch>68</pitch>
+              <tpc>10</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <Accidental>
+                <bracket>1</bracket>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                </Accidental>
+              <pitch>69</pitch>
+              <tpc>17</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <Accidental>
+                <subtype>accidentalFlat</subtype>
+                </Accidental>
+              <pitch>70</pitch>
+              <tpc>12</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <pitch>72</pitch>
+              <tpc>14</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          </voice>
         <voice>
           <Chord>
             <durationType>whole</durationType>
@@ -31162,24 +32079,16 @@ und abrupt wegnehmen
           </voice>
         <voice/>
         <voice>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
           <Chord>
             <durationType>quarter</durationType>
             <Stem>
               <visible>0</visible>
               </Stem>
             <Note>
-              <visible>0</visible>
-              <pitch>96</pitch>
-              <tpc>14</tpc>
-              <small>1</small>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
+              <autoplace>0</autoplace>
               <visible>0</visible>
               <pitch>93</pitch>
               <tpc>17</tpc>
@@ -31192,6 +32101,7 @@ und abrupt wegnehmen
               <visible>0</visible>
               </Stem>
             <Note>
+              <autoplace>0</autoplace>
               <visible>0</visible>
               <pitch>89</pitch>
               <tpc>13</tpc>
@@ -31204,6 +32114,7 @@ und abrupt wegnehmen
               <visible>0</visible>
               </Stem>
             <Note>
+              <autoplace>0</autoplace>
               <visible>0</visible>
               <pitch>84</pitch>
               <tpc>14</tpc>
@@ -31214,32 +32125,181 @@ und abrupt wegnehmen
         </Measure>
       <Measure>
         <voice>
-          <Dynamic>
-            <subtype>mp</subtype>
-            <velocity>64</velocity>
-            </Dynamic>
-          <StaffText>
-            <minDistance>-999</minDistance>
-            <size>8</size>
-            <offset x="-1.52157" y="2.82541"/>
-            <text>II</text>
-            </StaffText>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <Accidental>
+                <subtype>accidentalFlat</subtype>
+                </Accidental>
+              <Symbol>
+                <name>wiggleVibratoMediumSlowest</name>
+                <font>Bravura</font>
+                <Symbol>
+                  <name>wiggleVibratoMediumSlowest</name>
+                  <font>Bravura</font>
+                  <autoplace>0</autoplace>
+                  <offset x="2.05" y="-0.03"/>
+                  <z>499</z>
+                  </Symbol>
+                <autoplace>0</autoplace>
+                <offset x="5.85" y="0.28"/>
+                </Symbol>
+              <Symbol>
+                <name>wiggleVibratoMediumSlowest</name>
+                <font>Bravura</font>
+                <autoplace>0</autoplace>
+                <offset x="9.9" y="0.28"/>
+                </Symbol>
+              <Symbol>
+                <name>wiggleVibratoMediumSlowest</name>
+                <font>Bravura</font>
+                <Symbol>
+                  <name>wiggleVibratoMediumSlowest</name>
+                  <font>Bravura</font>
+                  <offset x="2.0528" y="-0.031103"/>
+                  <z>499</z>
+                  </Symbol>
+                <offset x="1.80397" y="0.279927"/>
+                </Symbol>
+              <Symbol>
+                <name>wiggleVibratoMediumSlowest</name>
+                <font>Bravura</font>
+                <Symbol>
+                  <name>wiggleVibratoMediumSlowest</name>
+                  <font>Bravura</font>
+                  <offset x="2.0528" y="-0.031103"/>
+                  <z>499</z>
+                  </Symbol>
+                <autoplace>0</autoplace>
+                <offset x="11.9" y="0.28"/>
+                </Symbol>
+              <pitch>68</pitch>
+              <tpc>10</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <Accidental>
+                <bracket>1</bracket>
+                <role>1</role>
+                <subtype>accidentalNatural</subtype>
+                <visible>0</visible>
+                </Accidental>
+              <pitch>69</pitch>
+              <tpc>17</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <Accidental>
+                <subtype>accidentalFlat</subtype>
+                <visible>0</visible>
+                </Accidental>
+              <pitch>70</pitch>
+              <tpc>12</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <pitch>72</pitch>
+              <tpc>14</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
           <Chord>
             <durationType>whole</durationType>
             <Note>
-              <Spanner type="Tie">
-                <Tie>
-                  </Tie>
-                <next>
-                  <location>
-                    <measures>1</measures>
-                    </location>
-                  </next>
-                </Spanner>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <pitch>65</pitch>
+              <tpc>13</tpc>
               <play>0</play>
               </Note>
+            </Chord>
+          </voice>
+        <voice/>
+        <voice>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <autoplace>0</autoplace>
+              <visible>0</visible>
+              <pitch>93</pitch>
+              <tpc>17</tpc>
+              <small>1</small>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <autoplace>0</autoplace>
+              <visible>0</visible>
+              <pitch>89</pitch>
+              <tpc>13</tpc>
+              <small>1</small>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <autoplace>0</autoplace>
+              <visible>0</visible>
+              <pitch>84</pitch>
+              <tpc>14</tpc>
+              <small>1</small>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <visible>0</visible>
+            <durationType>half</durationType>
+            </Rest>
+          <Chord>
+            <durationType>half</durationType>
             <Note>
               <Spanner type="Tie">
                 <Tie>
@@ -31247,6 +32307,8 @@ und abrupt wegnehmen
                 <next>
                   <location>
                     <measures>1</measures>
+                    <fractions>-1/2</fractions>
+                    <notes>1</notes>
                     </location>
                   </next>
                 </Spanner>
@@ -31259,19 +32321,61 @@ und abrupt wegnehmen
             </Chord>
           </voice>
         <voice>
-          <Dynamic>
-            <subtype>mp</subtype>
-            <velocity>64</velocity>
-            </Dynamic>
-          </voice>
-        <voice/>
-        <voice>
           <Chord>
-            <durationType>whole</durationType>
+            <durationType>half</durationType>
             <Note>
-              <visible>0</visible>
-              <pitch>95</pitch>
-              <tpc>19</tpc>
+              <Symbol>
+                <name>wiggleVibratoMediumSlowest</name>
+                <font>Bravura</font>
+                <Symbol>
+                  <name>wiggleVibratoMediumSlowest</name>
+                  <font>Bravura</font>
+                  <offset x="2.0528" y="-0.031103"/>
+                  <z>499</z>
+                  </Symbol>
+                <autoplace>0</autoplace>
+                <offset x="-1.50957" y="-0.72084"/>
+                </Symbol>
+              <pitch>65</pitch>
+              <tpc>13</tpc>
+              <play>0</play>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/2</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <Spanner type="Tie">
+                <Tie>
+                  </Tie>
+                <next>
+                  <location>
+                    <voices>-1</voices>
+                    <measures>1</measures>
+                    <fractions>-1/2</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <pitch>67</pitch>
+              <tpc>15</tpc>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/2</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             </Chord>
           </voice>
@@ -31293,7 +32397,9 @@ und abrupt wegnehmen
               <Spanner type="Tie">
                 <prev>
                   <location>
+                    <voices>1</voices>
                     <measures>-1</measures>
+                    <fractions>1/2</fractions>
                     </location>
                   </prev>
                 </Spanner>
@@ -31306,6 +32412,8 @@ und abrupt wegnehmen
                 <prev>
                   <location>
                     <measures>-1</measures>
+                    <fractions>1/2</fractions>
+                    <notes>-1</notes>
                     </location>
                   </prev>
                 </Spanner>
@@ -31335,9 +32443,10 @@ und abrupt wegnehmen
           <Chord>
             <durationType>whole</durationType>
             <Note>
+              <autoplace>0</autoplace>
               <visible>0</visible>
-              <pitch>91</pitch>
-              <tpc>15</tpc>
+              <pitch>95</pitch>
+              <tpc>19</tpc>
               <Spanner type="Glissando">
                 <Glissando>
                   <glissandoStyle>portamento</glissandoStyle>
@@ -31421,6 +32530,7 @@ und abrupt wegnehmen
           <Chord>
             <durationType>whole</durationType>
             <Note>
+              <autoplace>0</autoplace>
               <visible>0</visible>
               <pitch>96</pitch>
               <tpc>14</tpc>
@@ -31501,6 +32611,7 @@ und abrupt wegnehmen
               <visible>0</visible>
               </Stem>
             <Note>
+              <autoplace>0</autoplace>
               <visible>0</visible>
               <NoteDot>
                 <visible>0</visible>
@@ -31578,8 +32689,8 @@ und abrupt wegnehmen
               </Note>
             </Chord>
           <Dynamic>
-            <subtype>mf</subtype>
-            <velocity>80</velocity>
+            <subtype>f</subtype>
+            <velocity>96</velocity>
             </Dynamic>
           <Spanner type="HairPin">
             <prev>
@@ -31664,6 +32775,16 @@ und abrupt wegnehmen
                 </prev>
               </Spanner>
             <Note>
+              <Spanner type="Tie">
+                <Tie>
+                  </Tie>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-3/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
               <pitch>76</pitch>
               <tpc>18</tpc>
               <Spanner type="Glissando">
@@ -31700,9 +32821,29 @@ und abrupt wegnehmen
         </Measure>
       <Measure>
         <voice>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <Spanner type="Tie">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>3/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              <pitch>76</pitch>
+              <tpc>18</tpc>
+              </Note>
+            </Chord>
           <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
+            <durationType>eighth</durationType>
+            </Rest>
+          <Rest>
+            <durationType>quarter</durationType>
+            </Rest>
+          <Rest>
+            <durationType>half</durationType>
             </Rest>
           </voice>
         </Measure>
@@ -31848,42 +32989,18 @@ und abrupt wegnehmen
                 </Spanner>
               </Note>
             </Chord>
-          <Dynamic>
-            <subtype>mf</subtype>
-            <velocity>80</velocity>
-            </Dynamic>
           <StaffText>
-            <minDistance>-2.95628</minDistance>
+            <minDistance>-4.44291</minDistance>
             <size>8</size>
-            <offset x="-0.418943" y="-2.60779"/>
+            <offset x="-0.418943" y="-1.12679"/>
             <text>ord.</text>
             </StaffText>
           <Chord>
+            <dots>1</dots>
             <durationType>quarter</durationType>
             <Note>
               <pitch>76</pitch>
               <tpc>18</tpc>
-              <play>0</play>
-              <Spanner type="Glissando">
-                <Glissando>
-                  <glissandoStyle>portamento</glissandoStyle>
-                  <diagonal>1</diagonal>
-                  <anchor>3</anchor>
-                  </Glissando>
-                <next>
-                  <location>
-                    <measures>1</measures>
-                    <fractions>-1/2</fractions>
-                    </location>
-                  </next>
-                </Spanner>
-              </Note>
-            <Note>
-              <pitch>83</pitch>
-              <tpc>19</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
               <Spanner type="Glissando">
                 <Glissando>
                   <glissandoStyle>portamento</glissandoStyle>
@@ -31900,7 +33017,7 @@ und abrupt wegnehmen
               </Note>
             </Chord>
           <Rest>
-            <durationType>quarter</durationType>
+            <durationType>eighth</durationType>
             </Rest>
           </voice>
         <voice/>
@@ -31933,6 +33050,7 @@ und abrupt wegnehmen
               <visible>0</visible>
               <pitch>95</pitch>
               <tpc>19</tpc>
+              <play>0</play>
               <Spanner type="Glissando">
                 <Glissando>
                   <glissandoStyle>portamento</glissandoStyle>
@@ -31960,6 +33078,7 @@ und abrupt wegnehmen
       <Measure>
         <voice>
           <Chord>
+            <dots>1</dots>
             <durationType>quarter</durationType>
             <Note>
               <Accidental>
@@ -31968,38 +33087,7 @@ und abrupt wegnehmen
                 </Accidental>
               <pitch>76</pitch>
               <tpc>18</tpc>
-              <play>0</play>
-              <Spanner type="Glissando">
-                <Glissando>
-                  <glissandoStyle>portamento</glissandoStyle>
-                  <diagonal>1</diagonal>
-                  <anchor>3</anchor>
-                  </Glissando>
-                <next>
-                  <location>
-                    <fractions>3/4</fractions>
-                    </location>
-                  </next>
-                </Spanner>
-              <Spanner type="Glissando">
-                <prev>
-                  <location>
-                    <measures>-1</measures>
-                    <fractions>1/2</fractions>
-                    </location>
-                  </prev>
-                </Spanner>
-              </Note>
-            <Note>
-              <Accidental>
-                <role>1</role>
-                <subtype>accidentalQuarterToneSharpStein</subtype>
-                </Accidental>
-              <pitch>83</pitch>
-              <tpc>19</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
+              <tuning>50</tuning>
               <Spanner type="Glissando">
                 <Glissando>
                   <glissandoStyle>portamento</glissandoStyle>
@@ -32023,7 +33111,7 @@ und abrupt wegnehmen
               </Note>
             </Chord>
           <Rest>
-            <durationType>quarter</durationType>
+            <durationType>eighth</durationType>
             </Rest>
           <Rest>
             <durationType>quarter</durationType>
@@ -32043,18 +33131,16 @@ und abrupt wegnehmen
                 </Spanner>
               </Note>
             <Note>
+              <Symbol>
+                <name>arrowWhiteDown</name>
+                <font>Bravura</font>
+                <offset x="0" y="-1"/>
+                </Symbol>
               <pitch>84</pitch>
               <tpc>14</tpc>
               <head>diamond</head>
               <play>0</play>
               <headType>half</headType>
-              <Spanner type="Glissando">
-                <prev>
-                  <location>
-                    <fractions>-3/4</fractions>
-                    </location>
-                  </prev>
-                </Spanner>
               </Note>
             </Chord>
           </voice>
@@ -32070,6 +33156,7 @@ und abrupt wegnehmen
               <visible>0</visible>
               <pitch>95</pitch>
               <tpc>19</tpc>
+              <play>0</play>
               <tuning>50</tuning>
               <Spanner type="Glissando">
                 <Glissando>
@@ -32317,163 +33404,9 @@ und abrupt wegnehmen
       <Measure>
         <voice>
           <StaffText>
-            <minDistance>-1.13</minDistance>
+            <minDistance>-1.13756</minDistance>
             <size>8</size>
-            <offset x="-0.449876" y="-4.43032"/>
-            <text>ord.</text>
-            </StaffText>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Articulation>
-              <subtype>articStaccatissimoAbove</subtype>
-              <minDistance>-999</minDistance>
-              </Articulation>
-            <Note>
-              <pitch>76</pitch>
-              <tpc>18</tpc>
-              <play>0</play>
-              </Note>
-            <Note>
-              <pitch>83</pitch>
-              <tpc>19</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Articulation>
-              <subtype>articStaccatissimoAbove</subtype>
-              <minDistance>-999</minDistance>
-              </Articulation>
-            <Note>
-              <pitch>77</pitch>
-              <tpc>13</tpc>
-              <play>0</play>
-              </Note>
-            <Note>
-              <pitch>84</pitch>
-              <tpc>14</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
-              </Note>
-            </Chord>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
-          </voice>
-        <voice/>
-        <voice/>
-        <voice>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <visible>0</visible>
-              <pitch>95</pitch>
-              <tpc>19</tpc>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <visible>0</visible>
-              <pitch>86</pitch>
-              <tpc>16</tpc>
-              </Note>
-            </Chord>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <StaffText>
-            <minDistance>-2.3182</minDistance>
-            <size>8</size>
-            <offset x="0.255495" y="-4.0647"/>
-            <text>s.p.</text>
-            </StaffText>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Articulation>
-              <subtype>articStaccatissimoAbove</subtype>
-              <minDistance>-999</minDistance>
-              </Articulation>
-            <Note>
-              <pitch>76</pitch>
-              <tpc>18</tpc>
-              <play>0</play>
-              </Note>
-            <Note>
-              <pitch>83</pitch>
-              <tpc>19</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Articulation>
-              <subtype>articStaccatissimoAbove</subtype>
-              <minDistance>-999</minDistance>
-              </Articulation>
-            <Note>
-              <pitch>77</pitch>
-              <tpc>13</tpc>
-              <play>0</play>
-              </Note>
-            <Note>
-              <pitch>84</pitch>
-              <tpc>14</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
-              </Note>
-            </Chord>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
-          </voice>
-        <voice/>
-        <voice/>
-        <voice>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <visible>0</visible>
-              <pitch>95</pitch>
-              <tpc>19</tpc>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <visible>0</visible>
-              <pitch>96</pitch>
-              <tpc>14</tpc>
-              </Note>
-            </Chord>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <StaffText>
-            <minDistance>-0.365126</minDistance>
-            <size>8</size>
-            <offset x="-1.62549" y="-4.1952"/>
+            <offset x="-0.653313" y="-3.98276"/>
             <text>ord.</text>
             </StaffText>
           <Chord>
@@ -32547,6 +33480,160 @@ und abrupt wegnehmen
         </Measure>
       <Measure>
         <voice>
+          <StaffText>
+            <minDistance>-1.77751</minDistance>
+            <size>8</size>
+            <offset x="-0.476879" y="-4.10539"/>
+            <text>s.p.</text>
+            </StaffText>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Articulation>
+              <subtype>articStaccatissimoAbove</subtype>
+              <minDistance>-999</minDistance>
+              </Articulation>
+            <Note>
+              <pitch>76</pitch>
+              <tpc>18</tpc>
+              <play>0</play>
+              </Note>
+            <Note>
+              <pitch>83</pitch>
+              <tpc>19</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Articulation>
+              <subtype>articStaccatissimoAbove</subtype>
+              <minDistance>-999</minDistance>
+              </Articulation>
+            <Note>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <play>0</play>
+              </Note>
+            <Note>
+              <pitch>84</pitch>
+              <tpc>14</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Rest>
+            <durationType>half</durationType>
+            </Rest>
+          </voice>
+        <voice/>
+        <voice/>
+        <voice>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <pitch>95</pitch>
+              <tpc>19</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <pitch>96</pitch>
+              <tpc>14</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <StaffText>
+            <minDistance>-1.13756</minDistance>
+            <size>8</size>
+            <offset x="-0.653313" y="-3.98276"/>
+            <text>ord.</text>
+            </StaffText>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Articulation>
+              <subtype>articStaccatissimoAbove</subtype>
+              <minDistance>-999</minDistance>
+              </Articulation>
+            <Note>
+              <pitch>76</pitch>
+              <tpc>18</tpc>
+              <play>0</play>
+              </Note>
+            <Note>
+              <pitch>83</pitch>
+              <tpc>19</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Articulation>
+              <subtype>articStaccatissimoAbove</subtype>
+              <minDistance>-999</minDistance>
+              </Articulation>
+            <Note>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <play>0</play>
+              </Note>
+            <Note>
+              <pitch>84</pitch>
+              <tpc>14</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <Rest>
+            <durationType>half</durationType>
+            </Rest>
+          </voice>
+        <voice/>
+        <voice/>
+        <voice>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <pitch>93</pitch>
+              <tpc>17</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <pitch>96</pitch>
+              <tpc>14</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
           <Dynamic>
             <subtype>f</subtype>
             <velocity>96</velocity>
@@ -32559,9 +33646,8 @@ und abrupt wegnehmen
             </StaffText>
           <StaffText>
             <size>8</size>
-            <italic>1</italic>
-            <offset x="-1.60971" y="-3.34372"/>
-            <text>schrill</text>
+            <offset x="-0.422287" y="-3.34372"/>
+            <text>s.p.</text>
             </StaffText>
           <Chord>
             <durationType>quarter</durationType>
@@ -32615,13 +33701,57 @@ und abrupt wegnehmen
                     </location>
                   </next>
                 </Spanner>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <endText>&gt;</endText>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="8.63781" y="-1.28157"/>
+                    <off2 x="-8.3046" y="-4.07541"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
               </Note>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
+              <Spanner type="Tie">
+                <Tie>
+                  <visible>0</visible>
+                  <TieSegment no="0">
+                    <visible>0</visible>
+                    </TieSegment>
+                  </Tie>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-3/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
               <pitch>84</pitch>
               <tpc>14</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
               <Spanner type="Glissando">
                 <prev>
                   <location>
@@ -32675,78 +33805,103 @@ und abrupt wegnehmen
         </Measure>
       <Measure>
         <voice>
-          <StaffText>
-            <minDistance>-2.04928</minDistance>
-            <size>8</size>
-            <offset x="0" y="-3.51479"/>
-            <text>s.t.</text>
-            </StaffText>
           <Chord>
             <durationType>half</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
             <Note>
-              <pitch>76</pitch>
-              <tpc>18</tpc>
-              <play>0</play>
-              </Note>
-            <Note>
-              <Spanner type="Tie">
-                <Tie>
-                  <up>up</up>
-                  </Tie>
-                <next>
-                  <location>
-                    <fractions>1/2</fractions>
-                    <notes>-1</notes>
-                    </location>
-                  </next>
-                </Spanner>
-              <pitch>83</pitch>
-              <tpc>19</tpc>
-              <head>diamond</head>
-              <play>0</play>
-              <headType>half</headType>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>half</durationType>
-            <Note>
+              <visible>0</visible>
               <Spanner type="Tie">
                 <prev>
                   <location>
-                    <fractions>-1/2</fractions>
-                    <notes>1</notes>
+                    <measures>-1</measures>
+                    <fractions>3/4</fractions>
                     </location>
                   </prev>
                 </Spanner>
-              <pitch>83</pitch>
-              <tpc>19</tpc>
-              <play>0</play>
+              <pitch>84</pitch>
+              <tpc>14</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <pitch>69</pitch>
+              <tpc>17</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <small>1</small>
+            <durationType>quarter</durationType>
+            <Note>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             </Chord>
           </voice>
-        <voice/>
-        <voice/>
         <voice>
+          <location>
+            <fractions>3/4</fractions>
+            </location>
+          <StaffText>
+            <size>8</size>
+            <offset x="-0.102526" y="-2.44398"/>
+            <text>ord.</text>
+            </StaffText>
           <Chord>
-            <durationType>half</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
+            <durationType>quarter</durationType>
             <Note>
-              <visible>0</visible>
-              <pitch>95</pitch>
-              <tpc>19</tpc>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>half</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <visible>0</visible>
-              <pitch>83</pitch>
-              <tpc>19</tpc>
+              <pitch>72</pitch>
+              <tpc>14</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <voices>-1</voices>
+                    <measures>1</measures>
+                    <fractions>-3/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
               </Note>
             </Chord>
           </voice>
@@ -32759,6 +33914,15 @@ und abrupt wegnehmen
             </TimeSig>
           <Chord>
             <durationType>half</durationType>
+            <Spanner type="Slur">
+              <Slur>
+                </Slur>
+              <next>
+                <location>
+                  <fractions>1/2</fractions>
+                  </location>
+                </next>
+              </Spanner>
             <Note>
               <pitch>76</pitch>
               <tpc>18</tpc>
@@ -32771,7 +33935,7 @@ und abrupt wegnehmen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="-1.93539" y="-2.02337"/>
-                    <off2 x="0" y="0"/>
+                    <off2 x="-0.517867" y="-3.04966"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -32782,10 +33946,26 @@ und abrupt wegnehmen
                     </location>
                   </next>
                 </Spanner>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <voices>1</voices>
+                    <measures>-1</measures>
+                    <fractions>3/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <prev>
+                <location>
+                  <fractions>-1/2</fractions>
+                  </location>
+                </prev>
+              </Spanner>
             <Note>
               <Spanner type="Tie">
                 <Tie>
@@ -32799,23 +33979,6 @@ und abrupt wegnehmen
                 </Spanner>
               <pitch>69</pitch>
               <tpc>17</tpc>
-              </Note>
-            </Chord>
-          </voice>
-        <voice>
-          <Chord>
-            <dots>1</dots>
-            <durationType>half</durationType>
-            <Stem>
-              <visible>0</visible>
-              </Stem>
-            <Note>
-              <visible>0</visible>
-              <NoteDot>
-                <visible>0</visible>
-                </NoteDot>
-              <pitch>60</pitch>
-              <tpc>14</tpc>
               </Note>
             </Chord>
           </voice>
@@ -32841,45 +34004,41 @@ und abrupt wegnehmen
               <tpc>17</tpc>
               </Note>
             </Chord>
+          <Rest>
+            <visible>0</visible>
+            <durationType>quarter</durationType>
+            </Rest>
           <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <Spanner type="Tie">
+                <Tie>
+                  </Tie>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-1/2</fractions>
+                    <notes>1</notes>
+                    </location>
+                  </next>
+                </Spanner>
+              <pitch>55</pitch>
+              <tpc>15</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <dots>1</dots>
             <durationType>half</durationType>
             <Note>
               <pitch>62</pitch>
               <tpc>16</tpc>
               </Note>
             </Chord>
-          <Chord>
-            <dots>1</dots>
-            <durationType>half</durationType>
-            <Note>
-              <pitch>55</pitch>
-              <tpc>15</tpc>
-              </Note>
-            </Chord>
-          <Clef>
-            <concertClefType>C3</concertClefType>
-            <transposingClefType>C3</transposingClefType>
-            </Clef>
-          </voice>
-        <voice>
           <location>
-            <fractions>3/4</fractions>
+            <fractions>1/2</fractions>
             </location>
-          <Spanner type="HairPin">
-            <HairPin>
-              <subtype>1</subtype>
-              <Segment>
-                <subtype>0</subtype>
-                <offset x="6.02202" y="4.35264"/>
-                <off2 x="-22.3514" y="0"/>
-                </Segment>
-              </HairPin>
-            <next>
-              <location>
-                <measures>1</measures>
-                </location>
-              </next>
-            </Spanner>
           </voice>
         </Measure>
       <Measure>
@@ -32894,9 +34053,37 @@ und abrupt wegnehmen
               <pitch>48</pitch>
               <tpc>14</tpc>
               </Note>
+            <Note>
+              <Spanner type="Tie">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>1/2</fractions>
+                    <notes>-1</notes>
+                    </location>
+                  </prev>
+                </Spanner>
+              <pitch>55</pitch>
+              <tpc>15</tpc>
+              </Note>
             </Chord>
           </voice>
         <voice>
+          <Spanner type="HairPin">
+            <HairPin>
+              <subtype>1</subtype>
+              <Segment>
+                <subtype>0</subtype>
+                <offset x="-1.55525" y="6.36452"/>
+                <off2 x="-14.7741" y="0"/>
+                </Segment>
+              </HairPin>
+            <next>
+              <location>
+                <fractions>3/4</fractions>
+                </location>
+              </next>
+            </Spanner>
           <Chord>
             <dots>1</dots>
             <durationType>half</durationType>
@@ -32910,6 +34097,7 @@ und abrupt wegnehmen
                 </NoteDot>
               <pitch>60</pitch>
               <tpc>14</tpc>
+              <play>0</play>
               </Note>
             </Chord>
           <Dynamic>
@@ -32920,7 +34108,7 @@ und abrupt wegnehmen
           <Spanner type="HairPin">
             <prev>
               <location>
-                <measures>-1</measures>
+                <fractions>-3/4</fractions>
                 </location>
               </prev>
             </Spanner>
@@ -32934,7 +34122,7 @@ und abrupt wegnehmen
               <Symbol>
                 <name>arrowBlackDown</name>
                 <font>Bravura</font>
-                <offset x="0" y="-1"/>
+                <offset x="0" y="-4"/>
                 </Symbol>
               <pitch>65</pitch>
               <tpc>13</tpc>
@@ -33426,6 +34614,13 @@ und abrupt wegnehmen
             <subtype>pp</subtype>
             <velocity>33</velocity>
             </Dynamic>
+          <StaffText>
+            <minDistance>-3.88036</minDistance>
+            <size>8</size>
+            <italic>1</italic>
+            <offset x="-1.03832" y="-2.98597"/>
+            <text>ruhig, zerbrechlich</text>
+            </StaffText>
           <Chord>
             <durationType>whole</durationType>
             <Note>
@@ -33573,9 +34768,9 @@ und abrupt wegnehmen
         <voice>
           <StaffText>
             <size>8</size>
-            <offset x="5.01443" y="-1.95047"/>
+            <offset x="7.04434" y="-2.67544"/>
             <frameType>1</frameType>
-            <text>keep intensity!</text>
+            <text>Intensität halten</text>
             </StaffText>
           <Chord>
             <durationType>whole</durationType>
@@ -34198,8 +35393,8 @@ und abrupt wegnehmen
           <Chord>
             <durationType>eighth</durationType>
             <Note>
-              <pitch>74</pitch>
-              <tpc>16</tpc>
+              <pitch>67</pitch>
+              <tpc>15</tpc>
               </Note>
             </Chord>
           </voice>
@@ -34213,14 +35408,19 @@ und abrupt wegnehmen
           <Chord>
             <durationType>eighth</durationType>
             <Note>
-              <pitch>74</pitch>
-              <tpc>16</tpc>
+              <pitch>67</pitch>
+              <tpc>15</tpc>
               </Note>
             </Chord>
           </voice>
         </Measure>
       <Measure>
         <voice>
+          <StaffText>
+            <color r="255" g="0" b="0" a="255"/>
+            <offset x="-5.36476" y="-3.02991"/>
+            <text>whistletones und triller nicht plötzlich vergessen!</text>
+            </StaffText>
           <Rest>
             <durationType>measure</durationType>
             <duration>4/4</duration>
