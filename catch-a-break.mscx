@@ -246,6 +246,7 @@
         <barLineSpan>1</barLineSpan>
         <distOffset>2.5</distOffset>
         </Staff>
+      <show>0</show>
       <trackName>Bratsche</trackName>
       <Instrument id="viola">
         <trackName>Bratsche</trackName>
@@ -340,6 +341,7 @@
         <barLineSpan>1</barLineSpan>
         <distOffset>-5</distOffset>
         </Staff>
+      <show>0</show>
       <trackName>Bratsche</trackName>
       <Instrument id="viola">
         <trackName>Bratsche</trackName>
@@ -35005,11 +35007,6 @@ und abrupt wegnehmen
         </Measure>
       <Measure>
         <voice>
-          <StaffText>
-            <size>8</size>
-            <offset x="4.76848" y="-0.825395"/>
-            <text>ord.</text>
-            </StaffText>
           <Fermata>
             <subtype>fermataLongAbove</subtype>
             </Fermata>
@@ -35070,11 +35067,15 @@ und abrupt wegnehmen
             <velocity>33</velocity>
             </Dynamic>
           <StaffText>
-            <minDistance>-3.88036</minDistance>
+            <minDistance>-2.86633</minDistance>
             <size>8</size>
             <italic>1</italic>
-            <offset x="-1.03832" y="-2.98597"/>
+            <offset x="0" y="-4"/>
             <text>ruhig, zerbrechlich</text>
+            </StaffText>
+          <StaffText>
+            <minDistance>-5.58407</minDistance>
+            <text>ord.</text>
             </StaffText>
           <Chord>
             <durationType>whole</durationType>
@@ -35271,6 +35272,24 @@ und abrupt wegnehmen
               <tpc>18</tpc>
               <head>diamond</head>
               <headType>half</headType>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <beginText>ord.</beginText>
+                  <endText>&gt; s.p.</endText>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="-0.579974" y="-2.02991"/>
+                    <off2 x="0.122062" y="-0.203437"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
               </Note>
             </Chord>
           </voice>
@@ -35334,6 +35353,13 @@ und abrupt wegnehmen
               <tpc>18</tpc>
               <head>diamond</head>
               <headType>half</headType>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             </Chord>
           <Rest>
@@ -35371,13 +35397,17 @@ und abrupt wegnehmen
           <StaffText>
             <minDistance>-999</minDistance>
             <size>9</size>
-            <offset x="-3.12302" y="1.68316"/>
+            <offset x="-3.12" y="2.68"/>
             <text>III</text>
             </StaffText>
           <Dynamic>
             <subtype>p</subtype>
             <velocity>49</velocity>
             </Dynamic>
+          <StaffText>
+            <minDistance>-5.58407</minDistance>
+            <text>ord.</text>
+            </StaffText>
           <Chord>
             <durationType>half</durationType>
             <Note>
@@ -35487,6 +35517,41 @@ und abrupt wegnehmen
               </Note>
             </Chord>
           </voice>
+        <voice>
+          <location>
+            <fractions>1/2</fractions>
+            </location>
+          <Chord>
+            <durationType>half</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <pitch>71</pitch>
+              <tpc>19</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <beginText>ord.</beginText>
+                  <endText>&gt; s.p.</endText>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="3.48771" y="-1.0334"/>
+                    <off2 x="10.9475" y="-0.258349"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    <fractions>-1/2</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
         </Measure>
       <Measure>
         <voice>
@@ -35523,6 +35588,24 @@ und abrupt wegnehmen
               <tpc>18</tpc>
               <head>diamond</head>
               <headType>half</headType>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>71</pitch>
+              <tpc>19</tpc>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    <fractions>1/2</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             </Chord>
           </voice>
@@ -35565,6 +35648,24 @@ und abrupt wegnehmen
               <tpc>18</tpc>
               <head>diamond</head>
               <headType>half</headType>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <beginText>s.p.</beginText>
+                  <endText>&gt; ord.</endText>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="-1.70887" y="-2.84812"/>
+                    <off2 x="0" y="-1.38337"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>3</measures>
+                    </location>
+                  </next>
+                </Spanner>
               </Note>
             </Chord>
           </voice>
@@ -35694,6 +35795,13 @@ und abrupt wegnehmen
               <tpc>19</tpc>
               <head>diamond</head>
               <headType>half</headType>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-3</measures>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             </Chord>
           </voice>
@@ -35732,6 +35840,23 @@ und abrupt wegnehmen
               <tpc>19</tpc>
               <head>diamond</head>
               <headType>half</headType>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <beginText>ord.</beginText>
+                  <endText>&gt; s.t.</endText>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="-0.797465" y="-4.05982"/>
+                    <off2 x="0" y="0"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <measures>1</measures>
+                    </location>
+                  </next>
+                </Spanner>
               </Note>
             </Chord>
           </voice>
@@ -35756,6 +35881,13 @@ und abrupt wegnehmen
               <tpc>19</tpc>
               <head>diamond</head>
               <headType>half</headType>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <measures>-1</measures>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             </Chord>
           </voice>
@@ -35770,6 +35902,10 @@ und abrupt wegnehmen
         </Measure>
       <Measure>
         <voice>
+          <StaffText>
+            <minDistance>-5.58407</minDistance>
+            <text>ord.</text>
+            </StaffText>
           <Chord>
             <durationType>whole</durationType>
             <Note>
