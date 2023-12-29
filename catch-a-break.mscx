@@ -14460,6 +14460,13 @@ hin und her kippen
             <sigN>3</sigN>
             <sigD>4</sigD>
             </TimeSig>
+          <StaffText>
+            <autoplace>0</autoplace>
+            <color r="255" g="0" b="0" a="255"/>
+            <offset x="-15.9552" y="-10.753"/>
+            <text>eventuell ein paar Tkte 
+whistle tones wiederholen?</text>
+            </StaffText>
           <Chord>
             <dots>1</dots>
             <durationType>half</durationType>
@@ -14523,12 +14530,39 @@ hin und her kippen
           </voice>
         </Measure>
       <Measure>
-        <stretch>0.1</stretch>
         <voice>
           <TimeSig>
             <sigN>6</sigN>
             <sigD>4</sigD>
             </TimeSig>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <LayoutBreak>
+          <subtype>line</subtype>
+          </LayoutBreak>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <stretch>0.1</stretch>
+        <voice>
           <StaffText>
             <size>8</size>
             <offset x="-7" y="-7"/>
@@ -23579,6 +23613,30 @@ hin und her kippen
             <sigN>6</sigN>
             <sigD>4</sigD>
             </TimeSig>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
           <Chord>
             <dots>1</dots>
             <durationType>quarter</durationType>
@@ -23780,12 +23838,6 @@ hin und her kippen
             <Vibrato>
               <subtype>guitarVibratoWide</subtype>
               <lineWidth>0.145258</lineWidth>
-              <Segment>
-                <subtype>0</subtype>
-                <offset x="0.836809" y="1.73781"/>
-                <off2 x="-2.53108" y="0"/>
-                <minDistance>-999</minDistance>
-                </Segment>
               </Vibrato>
             <next>
               <location>
@@ -23872,12 +23924,6 @@ hin und her kippen
             <Trill>
               <subtype>prallprall</subtype>
               <lineWidth>0.145258</lineWidth>
-              <Segment>
-                <subtype>0</subtype>
-                <offset x="0.456219" y="2.06235"/>
-                <off2 x="-5.52912" y="0"/>
-                <minDistance>-999</minDistance>
-                </Segment>
               </Trill>
             <next>
               <location>
@@ -23961,12 +24007,6 @@ hin und her kippen
             <Trill>
               <subtype>prallprall</subtype>
               <lineWidth>0.145258</lineWidth>
-              <Segment>
-                <subtype>0</subtype>
-                <offset x="-0.0277322" y="2.05969"/>
-                <off2 x="0.0611164" y="0"/>
-                <minDistance>-999</minDistance>
-                </Segment>
               </Trill>
             <next>
               <location>
@@ -25885,6 +25925,30 @@ hin und her kippen
         </Measure>
       <Measure>
         <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
           <TimeSig>
             <sigN>4</sigN>
             <sigD>4</sigD>
@@ -27527,6 +27591,30 @@ hin und her kippen
             <sigN>6</sigN>
             <sigD>4</sigD>
             </TimeSig>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
           <Rest>
             <durationType>measure</durationType>
             <duration>6/4</duration>
@@ -38861,6 +38949,7 @@ und abrupt wegnehmen
           <Spanner type="HairPin">
             <HairPin>
               <subtype>1</subtype>
+              <hairpinCircledTip>1</hairpinCircledTip>
               </HairPin>
             <next>
               <location>
@@ -39391,6 +39480,30 @@ und abrupt wegnehmen
             <sigN>6</sigN>
             <sigD>4</sigD>
             </TimeSig>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>6/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
           <StaffText>
             <size>8</size>
             <offset x="-7" y="-2"/>
@@ -39447,9 +39560,9 @@ und abrupt wegnehmen
             </Breath>
           <StaffText>
             <placement>below</placement>
-            <minDistance>-999</minDistance>
+            <minDistance>0.220711</minDistance>
             <color r="255" g="0" b="0" a="255"/>
-            <offset x="1.01496" y="6.58958"/>
+            <offset x="4.50267" y="6.20206"/>
             <text>vielleicht auf umwicklung?</text>
             </StaffText>
           <Rest>

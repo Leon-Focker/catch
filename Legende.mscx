@@ -15,6 +15,8 @@
       <minSpreadSpread>0</minSpreadSpread>
       <maxAkkoladeDistance>0</maxAkkoladeDistance>
       <enableIndentationOnFirstSystem>0</enableIndentationOnFirstSystem>
+      <showHeader>0</showHeader>
+      <showFooter>0</showFooter>
       <frameLineSpacing>0.4</frameLineSpacing>
       <user1FontFace>Leland</user1FontFace>
       <user1LineSpacing>0.3</user1LineSpacing>
@@ -450,7 +452,7 @@
           <style>User-1</style>
           <offset x="3" y="0"/>
           <text>Pfeile zeigen einen graduellen Übergang von zwei Zuständen an, 
-zum Beispiel Tremolo-Geschwindigkeit.</text>
+zum Beispiel von langsamem zur schnellem Tremolo.</text>
           </Text>
         </HBox>
       <VBox>
@@ -532,7 +534,7 @@ zum Beispiel Tremolo-Geschwindigkeit.</text>
           <offset x="3" y="0"/>
           <text>Langsamer, mittelschneller und schneller Tremolo auf einer Note, sowie Tremolo 
 zwischen zwei Noten. Die Geschwindigkeit der Tremoli ist nicht unbedingt an 
-das Tempo gekoppelt. </text>
+das Tempo des Stücks, sondern vielmehr an das maximal Mögliche gekoppelt. </text>
           </Text>
         </HBox>
       <TBox>
@@ -1216,7 +1218,7 @@ klingen wie whistle tones auf der Flöte.</text>
           <offset x="3" y="0"/>
           <text>Vom Klangresultat ähnlich, wie die springenden Flageoletts, allerdings lauter. Dazu
 soll alles auf einer Saite und so weit wie möglich mit einem Bogen gespielt werden.
-Die Sprünge zwischen den Glissandi sollen also auch hier so hart wie möglich sein.</text>
+Die Sprünge zwischen den Glissandi sollen also auch hier so klar wie möglich sein.</text>
           </Text>
         </HBox>
       </Staff>
