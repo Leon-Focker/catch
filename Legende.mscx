@@ -325,6 +325,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="0" value="0"/>
           <controller ctrl="32" value="17"/>
           <program value="73"/>
           <synti>Fluid</synti>
@@ -736,6 +737,7 @@ also keinen Unterschied.</text>
         <width>80</width>
         <visible>0</visible>
         <LayoutBreak>
+          <visible>0</visible>
           <subtype>line</subtype>
           </LayoutBreak>
         <Text>
@@ -761,6 +763,7 @@ diesen hin und her kippen / &quot;schaukeln&quot;.</text>
         <width>80</width>
         <visible>0</visible>
         <LayoutBreak>
+          <visible>0</visible>
           <subtype>line</subtype>
           </LayoutBreak>
         <Text>
@@ -840,10 +843,6 @@ diesen hin und her kippen / &quot;schaukeln&quot;.</text>
       <HBox>
         <width>79.5</width>
         <visible>0</visible>
-        <LayoutBreak>
-          <visible>0</visible>
-          <subtype>line</subtype>
-          </LayoutBreak>
         <Text>
           <style>User-1</style>
           <offset x="3" y="0"/>
@@ -851,7 +850,25 @@ diesen hin und her kippen / &quot;schaukeln&quot;.</text>
 und das Mundstück unregelmäßig dazu bewegen. Die Folge sollte eine chaotische,
 wilde und unvorhersehbare Tonfolge sein. </text>
           </Text>
+        <LayoutBreak>
+          <visible>0</visible>
+          <subtype>line</subtype>
+          </LayoutBreak>
         </HBox>
+      <VBox>
+        <topGap>0</topGap>
+        <bottomGap>5</bottomGap>
+        <boxAutoSize>0</boxAutoSize>
+        </VBox>
+      <VBox>
+        <height>51</height>
+        <boxAutoSize>0</boxAutoSize>
+        <visible>0</visible>
+        <LayoutBreak>
+          <visible>0</visible>
+          <subtype>page</subtype>
+          </LayoutBreak>
+        </VBox>
       <TBox>
         <height>1</height>
         <bottomGap>4</bottomGap>
@@ -877,142 +894,224 @@ anderen springen, außer ein Übergang ist mit einem Pfeil notiert. </text>
           </Text>
         </TBox>
       <Measure>
+        <measureNumberMode>2</measureNumberMode>
+        <voice>
+          <BarLine>
+            <visible>0</visible>
+            </BarLine>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <Symbol>
+                <name>arrowBlackUp</name>
+                <font>Bravura</font>
+                <offset x="0" y="-1"/>
+                </Symbol>
+              <pitch>71</pitch>
+              <tpc>19</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <Symbol>
+                <name>arrowWhiteUp</name>
+                <font>Bravura</font>
+                <offset x="0" y="-1"/>
+                </Symbol>
+              <pitch>71</pitch>
+              <tpc>19</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <Symbol>
+                <name>arrowBlackDown</name>
+                <font>Bravura</font>
+                <offset x="0" y="-1"/>
+                </Symbol>
+              <pitch>71</pitch>
+              <tpc>19</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <Symbol>
+                <name>arrowWhiteDown</name>
+                <font>Bravura</font>
+                <offset x="0" y="-1"/>
+                </Symbol>
+              <pitch>71</pitch>
+              <tpc>19</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <HBox>
+        <width>80</width>
+        <visible>0</visible>
         <LayoutBreak>
+          <visible>0</visible>
           <subtype>line</subtype>
           </LayoutBreak>
+        <Text>
+          <style>User-1</style>
+          <offset x="3" y="0"/>
+          <text>Von links nach rechts: sehr wenig Druck (keine Tonhöhe), weniger Druck als normal,
+mehr Druck als normal, viel Überdruck (keine Tonhöhe mehr).</text>
+          </Text>
+        </HBox>
+      <VBox>
+        <topGap>0</topGap>
+        <bottomGap>4</bottomGap>
+        <boxAutoSize>0</boxAutoSize>
+        </VBox>
+      <Measure len="5/4">
+        <measureNumberMode>2</measureNumberMode>
         <voice>
+          <BarLine>
+            <visible>0</visible>
+            </BarLine>
+          <StaffText>
+            <minDistance>-999</minDistance>
+            <size>8</size>
+            <offset x="-1.5" y="0"/>
+            <text>m.s.p.</text>
+            </StaffText>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <pitch>71</pitch>
+              <tpc>19</tpc>
               </Note>
             </Chord>
-          <Rest>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
+          <StaffText>
+            <minDistance>-999</minDistance>
+            <size>8</size>
+            <offset x="0" y="0"/>
+            <text>s.p.</text>
+            </StaffText>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <pitch>71</pitch>
+              <tpc>19</tpc>
               </Note>
             </Chord>
-          <Rest>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
+          <StaffText>
+            <minDistance>-999</minDistance>
+            <size>8</size>
+            <offset x="-0.5" y="0"/>
+            <text>ord.</text>
+            </StaffText>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <pitch>71</pitch>
+              <tpc>19</tpc>
               </Note>
             </Chord>
-          <Rest>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
+          <StaffText>
+            <minDistance>-999</minDistance>
+            <size>8</size>
+            <offset x="-0.5" y="0"/>
+            <text>s.t.</text>
+            </StaffText>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <pitch>71</pitch>
+              <tpc>19</tpc>
               </Note>
             </Chord>
-          <Rest>
+          <StaffText>
+            <minDistance>-999</minDistance>
+            <size>8</size>
+            <offset x="-1" y="0"/>
+            <text>m.s.t.</text>
+            </StaffText>
+          <Chord>
             <durationType>quarter</durationType>
-            </Rest>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
+            <Note>
+              <pitch>71</pitch>
+              <tpc>19</tpc>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
-      <Measure>
+      <HBox>
+        <width>80</width>
+        <visible>0</visible>
         <LayoutBreak>
+          <visible>0</visible>
           <subtype>line</subtype>
           </LayoutBreak>
+        <Text>
+          <style>User-1</style>
+          <offset x="3" y="0"/>
+          <text>Von links nach rechts: fast auf dem Steg, nahe dem Steg, ordinario Position,
+nahe dem Griffbrett, auf dem Griffbrett.</text>
+          </Text>
+        </HBox>
+      <VBox>
+        <topGap>0</topGap>
+        <bottomGap>4</bottomGap>
+        <boxAutoSize>0</boxAutoSize>
+        </VBox>
+      <Measure len="2/4">
+        <measureNumberMode>2</measureNumberMode>
         <voice>
+          <BarLine>
+            <visible>0</visible>
+            </BarLine>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <pitch>71</pitch>
+              <tpc>19</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
               </Note>
             </Chord>
-          <Rest>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <pitch>69</pitch>
+              <tpc>17</tpc>
               </Note>
-            </Chord>
-          <Rest>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Chord>
-            <durationType>quarter</durationType>
             <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
               </Note>
             </Chord>
-          <Rest>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
           </voice>
         </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
+      <HBox>
+        <width>80</width>
+        <visible>0</visible>
         <LayoutBreak>
+          <visible>0</visible>
           <subtype>line</subtype>
           </LayoutBreak>
+        <Text>
+          <style>User-1</style>
+          <offset x="3" y="0"/>
+          <text>Eine Raute steht immer für einen aufgelegten Finger. Das zweite ist somit 
+ein künstliches Flageolett.</text>
+          </Text>
+        </HBox>
+      <VBox>
+        <topGap>0</topGap>
+        <bottomGap>4</bottomGap>
+        <boxAutoSize>0</boxAutoSize>
+        </VBox>
+      <Measure>
+        <stretch>0.8</stretch>
+        <measureNumberMode>2</measureNumberMode>
         <voice>
           <Rest>
             <durationType>measure</durationType>
@@ -1020,7 +1119,25 @@ anderen springen, außer ein Übergang ist mit einem Pfeil notiert. </text>
             </Rest>
           </voice>
         </Measure>
+      <HBox>
+        <width>80</width>
+        <visible>0</visible>
+        <Text>
+          <style>User-1</style>
+          <offset x="3" y="0"/>
+          <text>&quot;Möwenschrei&quot;-Effekt. Der Abstand zwischen den Fingern sollte immer der gleiche sein
+und nur auf der (also auf einer!) Saite verschoben werden. Dadurch entsteht ein
+Flageolett-Glissando, dass (in diesem Fall) immer wieder zum gleichen Ton springt. 
+Diese Sprünge oder Brüche sind sehr deutlich hervorzuheben!</text>
+          </Text>
+        </HBox>
+      <VBox>
+        <topGap>0</topGap>
+        <bottomGap>8.5</bottomGap>
+        <boxAutoSize>0</boxAutoSize>
+        </VBox>
       <Measure>
+        <measureNumberMode>2</measureNumberMode>
         <voice>
           <Rest>
             <durationType>measure</durationType>
@@ -1028,26 +1145,28 @@ anderen springen, außer ein Übergang ist mit einem Pfeil notiert. </text>
             </Rest>
           </voice>
         </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
+      <HBox>
+        <width>80</width>
+        <visible>0</visible>
         <LayoutBreak>
+          <visible>0</visible>
           <subtype>line</subtype>
           </LayoutBreak>
+        <Text>
+          <style>User-1</style>
+          <offset x="3" y="0"/>
+          <text>Ein künstliches Flageolett mit einem &quot;vibrato&quot; nur im oberen Finger. Dadurch sollte
+der entstehende Oberton hoch und runter springen. Die Bewegung sollte in diesem
+Fall eher regelmäsig und nicht zu schnell sein.</text>
+          </Text>
+        </HBox>
+      <VBox>
+        <topGap>0</topGap>
+        <bottomGap>9.5</bottomGap>
+        <boxAutoSize>0</boxAutoSize>
+        </VBox>
+      <Measure>
+        <measureNumberMode>2</measureNumberMode>
         <voice>
           <Rest>
             <durationType>measure</durationType>
@@ -1055,42 +1174,29 @@ anderen springen, außer ein Übergang ist mit einem Pfeil notiert. </text>
             </Rest>
           </voice>
         </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
+      <HBox>
+        <width>80</width>
+        <visible>0</visible>
         <LayoutBreak>
+          <visible>0</visible>
           <subtype>line</subtype>
           </LayoutBreak>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
+        <Text>
+          <style>User-1</style>
+          <offset x="3" y="0"/>
+          <text>Ein künstliches Flageolett, bei dem der obere Finger seine Position unregelmäßig
+verändert. Die notierte Linie soll nicht nachgeahmt werden. Stattdessen soll es ähnlich
+klingen wie whistle tones auf der Flöte.</text>
+          </Text>
+        </HBox>
+      <VBox>
+        <topGap>0</topGap>
+        <bottomGap>9.5</bottomGap>
+        <boxAutoSize>0</boxAutoSize>
+        </VBox>
       <Measure>
+        <stretch>0.9</stretch>
+        <measureNumberMode>2</measureNumberMode>
         <voice>
           <Rest>
             <durationType>measure</durationType>
@@ -1098,37 +1204,25 @@ anderen springen, außer ein Übergang ist mit einem Pfeil notiert. </text>
             </Rest>
           </voice>
         </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
+      <HBox>
+        <width>80</width>
+        <visible>0</visible>
+        <LayoutBreak>
+          <visible>0</visible>
+          <subtype>line</subtype>
+          </LayoutBreak>
+        <Text>
+          <style>User-1</style>
+          <offset x="3" y="0"/>
+          <text>Vom Klangresultat ähnlich, wie die springenden Flageoletts, allerdings lauter. Dazu
+soll alles auf einer Saite und so weit wie möglich mit einem Bogen gespielt werden.
+Die Sprünge zwischen den Glissandi sollen also auch hier so hart wie möglich sein.</text>
+          </Text>
+        </HBox>
       </Staff>
     <Staff id="2">
       <Measure len="3/4">
         <voice>
-          <KeySig>
-            <accidental>0</accidental>
-            </KeySig>
           <TimeSig>
             <visible>0</visible>
             <sigN>4</sigN>
@@ -1751,242 +1845,445 @@ anderen springen, außer ein Übergang ist mit einem Pfeil notiert. </text>
         </Measure>
       <Measure>
         <voice>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
-              </Note>
-            </Chord>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure len="5/4">
+        <voice>
+          <Rest>
+            <durationType>whole</durationType>
+            </Rest>
           <Rest>
             <durationType>quarter</durationType>
             </Rest>
+          </voice>
+        </Measure>
+      <Measure len="2/4">
+        <voice>
           <Rest>
             <durationType>half</durationType>
             </Rest>
+          <Clef>
+            <concertClefType>C3</concertClefType>
+            <transposingClefType>C3</transposingClefType>
+            </Clef>
           </voice>
         </Measure>
       <Measure>
         <voice>
+          <BarLine>
+            <visible>0</visible>
+            </BarLine>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <pitch>50</pitch>
+              <tpc>16</tpc>
+              <play>0</play>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            <Note>
+              <pitch>53</pitch>
+              <tpc>13</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
               </Note>
             </Chord>
-          <Rest>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <pitch>53</pitch>
+              <tpc>13</tpc>
+              <play>0</play>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            <Note>
+              <pitch>57</pitch>
+              <tpc>17</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             </Chord>
-          <Rest>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <pitch>57</pitch>
+              <tpc>17</tpc>
+              <play>0</play>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            <Note>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             </Chord>
-          <Rest>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              <play>0</play>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            <Note>
+              <pitch>69</pitch>
+              <tpc>17</tpc>
+              <head>diamond</head>
+              <play>0</play>
+              <headType>half</headType>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             </Chord>
-          <Rest>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
+          <BarLine>
+            <visible>0</visible>
+            </BarLine>
           </voice>
         </Measure>
       <Measure>
+        <voice>
+          <BarLine>
+            <visible>0</visible>
+            </BarLine>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <Accidental>
+                <subtype>accidentalSharp</subtype>
+                </Accidental>
+              <pitch>56</pitch>
+              <tpc>22</tpc>
+              <play>0</play>
+              </Note>
+            <Note>
+              <Symbol>
+                <name>wiggleVibratoMediumSlowest</name>
+                <font>Bravura</font>
+                <Symbol>
+                  <name>wiggleVibratoMediumSlowest</name>
+                  <font>Bravura</font>
+                  <offset x="2.0528" y="-0.031103"/>
+                  <z>499</z>
+                  </Symbol>
+                <offset x="1.80397" y="0.279927"/>
+                </Symbol>
+              <pitch>59</pitch>
+              <tpc>19</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <BarLine>
+            <visible>0</visible>
+            </BarLine>
+          </voice>
+        <voice/>
+        <voice/>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
             <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <visible>0</visible>
+              <pitch>81</pitch>
+              <tpc>17</tpc>
               </Note>
             </Chord>
-          <Rest>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
           </voice>
         </Measure>
       <Measure>
         <voice>
+          <BarLine>
+            <visible>0</visible>
+            </BarLine>
+          <StaffText>
+            <size>9</size>
+            <offset x="-2.40954" y="-0.67854"/>
+            <text>III</text>
+            </StaffText>
+          <Dynamic>
+            <subtype>p</subtype>
+            <velocity>49</velocity>
+            </Dynamic>
+          <StaffText>
+            <visible>0</visible>
+            <minDistance>-5.58407</minDistance>
+            <text>ord.</text>
+            </StaffText>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <pitch>60</pitch>
+              <tpc>14</tpc>
+              </Note>
+            <Note>
+              <Symbol>
+                <name>wiggleRandom4</name>
+                <font>Bravura</font>
+                <autoplace>0</autoplace>
+                <offset x="2.03" y="0.05"/>
+                </Symbol>
+              <pitch>64</pitch>
+              <tpc>18</tpc>
+              <head>diamond</head>
+              <headType>half</headType>
+              </Note>
+            </Chord>
+          <BarLine>
+            <visible>0</visible>
+            </BarLine>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <BarLine>
+            <visible>0</visible>
+            </BarLine>
+          <Dynamic>
+            <subtype>f</subtype>
+            <velocity>96</velocity>
+            </Dynamic>
+          <StaffText>
+            <visible>0</visible>
+            <size>8</size>
+            <offset x="-3.2528" y="-2.45162"/>
+            <text>s.p.</text>
+            </StaffText>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
-              <pitch>67</pitch>
-              <tpc>15</tpc>
+              <pitch>72</pitch>
+              <tpc>14</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
               </Note>
             </Chord>
-          <Rest>
+          <Chord>
             <durationType>quarter</durationType>
-            </Rest>
-          <Rest>
-            <durationType>half</durationType>
-            </Rest>
+            <Note>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <small>1</small>
+              <play>0</play>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <pitch>72</pitch>
+              <tpc>14</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          <BarLine>
+            <visible>0</visible>
+            </BarLine>
           </voice>
-        </Measure>
-      <Measure>
         <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
+          <location>
+            <fractions>1/4</fractions>
+            </location>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <pitch>72</pitch>
+              <tpc>14</tpc>
+              <Spanner type="Glissando">
+                <Glissando>
+                  <glissandoStyle>portamento</glissandoStyle>
+                  <diagonal>1</diagonal>
+                  <anchor>3</anchor>
+                  </Glissando>
+                <next>
+                  <location>
+                    <fractions>1/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <small>1</small>
+              <play>0</play>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
           </voice>
         </Measure>
       </Staff>
     <Staff id="3">
       <Measure len="3/4">
         <voice>
-          <KeySig>
-            <accidental>0</accidental>
-            </KeySig>
           <TimeSig>
             <visible>0</visible>
             <sigN>4</sigN>
@@ -2354,131 +2651,20 @@ anderen springen, außer ein Übergang ist mit einem Pfeil notiert. </text>
             </Rest>
           </voice>
         </Measure>
-      <Measure>
+      <Measure len="5/4">
         <voice>
           <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
+            <durationType>whole</durationType>
+            </Rest>
+          <Rest>
+            <durationType>quarter</durationType>
             </Rest>
           </voice>
         </Measure>
-      <Measure>
+      <Measure len="2/4">
         <voice>
           <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
-            </Rest>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Rest>
-            <durationType>measure</durationType>
-            <duration>4/4</duration>
+            <durationType>half</durationType>
             </Rest>
           </voice>
         </Measure>

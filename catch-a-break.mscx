@@ -4421,6 +4421,12 @@
                   <offset x="-0.098969" y="-0.0659794"/>
                   <diagonal>1</diagonal>
                   <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="-0.0659794"/>
+                    <off2 x="0" y="0"/>
+                    <offset x="0" y="-0.0659794"/>
+                    </Segment>
                   </Glissando>
                 <next>
                   <location>
@@ -9544,6 +9550,7 @@ hin und her kippen
             <text>M</text>
             </StaffText>
           <StaffText>
+            <visible>0</visible>
             <size>8</size>
             <color r="255" g="0" b="0" a="255"/>
             <offset x="-3.01087" y="-1.9039"/>
@@ -30386,9 +30393,8 @@ und abrupt wegnehmen
             <durationType>quarter</durationType>
             <Articulation>
               <subtype>ornamentTrill</subtype>
-              <minDistance>-999</minDistance>
-              <offset x="-1.54113" y="2.98003"/>
-              <visible>0</visible>
+              <autoplace>0</autoplace>
+              <offset x="1.30071" y="2.1404"/>
               </Articulation>
             <Note>
               <NoteDot>
@@ -30490,6 +30496,7 @@ und abrupt wegnehmen
               <pitch>74</pitch>
               <tpc>16</tpc>
               <head>diamond</head>
+              <headType>half</headType>
               <Spanner type="Glissando">
                 <prev>
                   <location>
@@ -31925,7 +31932,7 @@ und abrupt wegnehmen
             <velocity>33</velocity>
             </Dynamic>
           <StaffText>
-            <offset x="-4.7398" y="-2.43754"/>
+            <offset x="-5.32109" y="-2.24378"/>
             <text>s.p.</text>
             </StaffText>
           <Spanner type="HairPin">
@@ -33815,6 +33822,7 @@ und abrupt wegnehmen
       <Measure>
         <voice>
           <StaffText>
+            <visible>0</visible>
             <size>8</size>
             <offset x="-6.81787" y="-1.58726"/>
             <frameType>1</frameType>
@@ -35579,11 +35587,20 @@ und abrupt wegnehmen
             </StaffText>
           <StaffText>
             <size>8</size>
-            <offset x="-0.422287" y="-3.34372"/>
+            <offset x="-3.10766" y="-2.91839"/>
             <text>s.p.</text>
             </StaffText>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <Slur>
+                </Slur>
+              <next>
+                <location>
+                  <fractions>3/4</fractions>
+                  </location>
+                </next>
+              </Spanner>
             <Note>
               <pitch>83</pitch>
               <tpc>19</tpc>
@@ -35655,6 +35672,13 @@ und abrupt wegnehmen
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <prev>
+                <location>
+                  <fractions>-3/4</fractions>
+                  </location>
+                </prev>
+              </Spanner>
             <Note>
               <Spanner type="Tie">
                 <Tie>
@@ -36095,6 +36119,15 @@ und abrupt wegnehmen
             </StaffText>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <Slur>
+                </Slur>
+              <next>
+                <location>
+                  <fractions>5/4</fractions>
+                  </location>
+                </next>
+              </Spanner>
             <Note>
               <Accidental>
                 <subtype>accidentalFlat</subtype>
@@ -36187,6 +36220,13 @@ und abrupt wegnehmen
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <prev>
+                <location>
+                  <fractions>-5/4</fractions>
+                  </location>
+                </prev>
+              </Spanner>
             <Note>
               <Accidental>
                 <subtype>accidentalFlat</subtype>
@@ -36209,6 +36249,15 @@ und abrupt wegnehmen
             </TimeSig>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <Slur>
+                </Slur>
+              <next>
+                <location>
+                  <fractions>3/4</fractions>
+                  </location>
+                </next>
+              </Spanner>
             <Note>
               <Accidental>
                 <bracket>1</bracket>
@@ -36256,6 +36305,13 @@ und abrupt wegnehmen
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <prev>
+                <location>
+                  <fractions>-3/4</fractions>
+                  </location>
+                </prev>
+              </Spanner>
             <Note>
               <Accidental>
                 <bracket>1</bracket>
@@ -36281,6 +36337,15 @@ und abrupt wegnehmen
         <voice>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <Slur>
+                </Slur>
+              <next>
+                <location>
+                  <fractions>3/4</fractions>
+                  </location>
+                </next>
+              </Spanner>
             <Note>
               <Accidental>
                 <subtype>accidentalFlat</subtype>
@@ -36333,6 +36398,13 @@ und abrupt wegnehmen
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <prev>
+                <location>
+                  <fractions>-3/4</fractions>
+                  </location>
+                </prev>
+              </Spanner>
             <Note>
               <pitch>60</pitch>
               <tpc>14</tpc>
@@ -36351,6 +36423,15 @@ und abrupt wegnehmen
         <voice>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <Slur>
+                </Slur>
+              <next>
+                <location>
+                  <fractions>3/4</fractions>
+                  </location>
+                </next>
+              </Spanner>
             <Note>
               <pitch>60</pitch>
               <tpc>14</tpc>
@@ -36389,6 +36470,13 @@ und abrupt wegnehmen
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <prev>
+                <location>
+                  <fractions>-3/4</fractions>
+                  </location>
+                </prev>
+              </Spanner>
             <Note>
               <Accidental>
                 <subtype>accidentalFlat</subtype>
@@ -36415,6 +36503,15 @@ und abrupt wegnehmen
             </Dynamic>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <Slur>
+                </Slur>
+              <next>
+                <location>
+                  <fractions>3/4</fractions>
+                  </location>
+                </next>
+              </Spanner>
             <Note>
               <Accidental>
                 <bracket>1</bracket>
@@ -36466,6 +36563,13 @@ und abrupt wegnehmen
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <prev>
+                <location>
+                  <fractions>-3/4</fractions>
+                  </location>
+                </prev>
+              </Spanner>
             <Note>
               <pitch>60</pitch>
               <tpc>14</tpc>
@@ -37924,14 +38028,15 @@ und abrupt wegnehmen
               </Note>
             </Chord>
           <StaffText>
+            <minDistance>-999</minDistance>
             <size>8</size>
-            <offset x="-2.39549" y="-1.3941"/>
+            <offset x="-2.10485" y="1.60921"/>
             <text>II</text>
             </StaffText>
           <StaffText>
             <minDistance>-999</minDistance>
             <size>8</size>
-            <offset x="-2.7147" y="0.488713"/>
+            <offset x="-2.42406" y="3.65349"/>
             <text>III</text>
             </StaffText>
           <Chord>
@@ -38623,16 +38728,6 @@ und abrupt wegnehmen
             </Chord>
           </voice>
         <voice>
-          <StaffText>
-            <minDistance>-6.50401</minDistance>
-            <size>8</size>
-            <color r="255" g="0" b="0" a="255"/>
-            <offset x="-3.05833" y="-6.16437"/>
-            <frameType>1</frameType>
-            <text>alles auf einer Saite, 
-zwischen glissandierenden Noten springen
-</text>
-            </StaffText>
           <Dynamic>
             <subtype>pp</subtype>
             <velocity>33</velocity>
