@@ -14578,9 +14578,6 @@ hin und her kippen
               <headType>half</headType>
               </Note>
             </Chord>
-          <location>
-            <fractions>1/8</fractions>
-            </location>
           </voice>
         </Measure>
       <Measure>
@@ -14626,9 +14623,6 @@ hin und her kippen
               <headType>half</headType>
               </Note>
             </Chord>
-          <location>
-            <fractions>1/4</fractions>
-            </location>
           </voice>
         </Measure>
       <Measure>
@@ -32809,7 +32803,7 @@ und abrupt wegnehmen
               <Segment>
                 <subtype>0</subtype>
                 <offset x="0" y="2"/>
-                <off2 x="-8.67171" y="0"/>
+                <off2 x="-1.66347" y="0"/>
                 </Segment>
               </HairPin>
             <next>
