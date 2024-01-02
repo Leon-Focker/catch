@@ -506,7 +506,6 @@
         <height>13</height>
         <visible>0</visible>
         <Text>
-          <visible>0</visible>
           <style>Title</style>
           <family>Leland</family>
           <text>catch a break</text>
@@ -5574,7 +5573,6 @@
           <Dynamic>
             <subtype>mp</subtype>
             <velocity>64</velocity>
-            <size>10</size>
             <offset x="-1.23161" y="3.19399"/>
             </Dynamic>
           <Spanner type="Trill">
@@ -6715,8 +6713,8 @@ hin und her kippen
           <Dynamic>
             <subtype>f</subtype>
             <velocity>96</velocity>
-            <minDistance>-1.36951</minDistance>
-            <offset x="0" y="2"/>
+            <minDistance>-0.829191</minDistance>
+            <offset x="0.5" y="2.5"/>
             </Dynamic>
           <Beam>
             <visible>0</visible>
@@ -9025,7 +9023,6 @@ hin und her kippen
           <Dynamic>
             <subtype>sfz</subtype>
             <velocity>112</velocity>
-            <size>10</size>
             </Dynamic>
           <Chord>
             <durationType>quarter</durationType>
@@ -9068,7 +9065,6 @@ hin und her kippen
           <Dynamic>
             <subtype>sfz</subtype>
             <velocity>112</velocity>
-            <size>10</size>
             </Dynamic>
           <Chord>
             <durationType>quarter</durationType>
@@ -9094,7 +9090,6 @@ hin und her kippen
           <Dynamic>
             <subtype>sfz</subtype>
             <velocity>112</velocity>
-            <size>10</size>
             </Dynamic>
           <Chord>
             <durationType>quarter</durationType>
@@ -9121,8 +9116,8 @@ hin und her kippen
               <hairpinCircledTip>1</hairpinCircledTip>
               <Segment>
                 <subtype>0</subtype>
-                <offset x="0" y="2"/>
-                <off2 x="-2.47425" y="0"/>
+                <offset x="0" y="4"/>
+                <off2 x="-2.65693" y="0"/>
                 </Segment>
               </HairPin>
             <next>
@@ -9147,7 +9142,6 @@ hin und her kippen
           <Dynamic>
             <subtype>sfz</subtype>
             <velocity>112</velocity>
-            <size>10</size>
             </Dynamic>
           <Chord>
             <durationType>quarter</durationType>
@@ -9178,8 +9172,8 @@ hin und her kippen
               <hairpinCircledTip>1</hairpinCircledTip>
               <Segment>
                 <subtype>0</subtype>
-                <offset x="0" y="2"/>
-                <off2 x="-2.57694" y="0"/>
+                <offset x="-0.502371" y="4"/>
+                <off2 x="-1.80055" y="0"/>
                 </Segment>
               </HairPin>
             <next>
@@ -9204,7 +9198,6 @@ hin und her kippen
           <Dynamic>
             <subtype>sfz</subtype>
             <velocity>112</velocity>
-            <size>10</size>
             </Dynamic>
           <Chord>
             <durationType>quarter</durationType>
@@ -9239,7 +9232,6 @@ hin und her kippen
           <Dynamic>
             <subtype>mp</subtype>
             <velocity>64</velocity>
-            <size>10</size>
             </Dynamic>
           <Chord>
             <durationType>quarter</durationType>
@@ -9619,9 +9611,8 @@ hin und her kippen
           <Dynamic>
             <subtype>f</subtype>
             <velocity>96</velocity>
-            <minDistance>7.16272e-16</minDistance>
-            <size>10</size>
-            <offset x="0" y="2.7929"/>
+            <minDistance>-0.5029</minDistance>
+            <offset x="0" y="2.45129"/>
             </Dynamic>
           <StaffText>
             <visible>0</visible>
@@ -10063,7 +10054,8 @@ hin und her kippen
           <Dynamic>
             <subtype>ff</subtype>
             <velocity>112</velocity>
-            <size>10</size>
+            <minDistance>0.185809</minDistance>
+            <offset x="0" y="3"/>
             </Dynamic>
           <Spanner type="TextLine">
             <TextLine>
@@ -10598,7 +10590,6 @@ hin und her kippen
           <Dynamic>
             <subtype>ff</subtype>
             <velocity>112</velocity>
-            <size>10</size>
             <offset x="0" y="2.4"/>
             </Dynamic>
           <Rest>
@@ -11389,7 +11380,6 @@ hin und her kippen
             <subtype>ff</subtype>
             <velocity>112</velocity>
             <minDistance>-0.145089</minDistance>
-            <size>10</size>
             <offset x="-1" y="2.5"/>
             </Dynamic>
           <Chord>
@@ -11726,6 +11716,10 @@ hin und her kippen
             </Chord>
           </voice>
         <voice>
+          <Dynamic>
+            <subtype>pp</subtype>
+            <velocity>33</velocity>
+            </Dynamic>
           <Chord>
             <durationType>whole</durationType>
             <Note>
@@ -14074,6 +14068,7 @@ hin und her kippen
           <Dynamic>
             <subtype>pp</subtype>
             <velocity>33</velocity>
+            <visible>0</visible>
             </Dynamic>
           <Chord>
             <durationType>eighth</durationType>
@@ -14671,11 +14666,12 @@ hin und her kippen
           </voice>
         </Measure>
       <Measure>
-        <stretch>0.1</stretch>
+        <stretch>0.9</stretch>
         <voice>
           <StaffText>
+            <autoplace>0</autoplace>
             <size>8</size>
-            <offset x="-7" y="-7"/>
+            <offset x="-6.5" y="-7"/>
             <frameType>1</frameType>
             <text>jeweils exakt und mit Akzent enden</text>
             </StaffText>
@@ -14830,7 +14826,7 @@ hin und her kippen
         <voice>
           <StaffText>
             <size>8</size>
-            <offset x="-0.51263" y="-2.53448"/>
+            <offset x="-1" y="-2.53"/>
             <frameType>1</frameType>
             <text>beliebige Tonhöhen</text>
             </StaffText>
@@ -16283,7 +16279,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="2.82638" y="0"/>
+                    <off2 x="3.0319" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -16751,7 +16747,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="2.09471" y="0"/>
+                    <off2 x="2.03012" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -16841,7 +16837,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="19.8334" y="0"/>
+                    <off2 x="19.4943" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -17332,6 +17328,11 @@ hin und her kippen
                   <diagonal>1</diagonal>
                   <lineWidth>0.5</lineWidth>
                   <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="2.03232" y="0.0660138"/>
+                    </Segment>
                   </TextLine>
                 <next>
                   <location>
@@ -17475,7 +17476,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="4.84103" y="0"/>
+                    <off2 x="5.01229" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -18054,7 +18055,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="4.00275" y="0"/>
+                    <off2 x="4.13192" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -18640,7 +18641,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="5.2829" y="0"/>
+                    <off2 x="5.29196" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -18887,7 +18888,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="3.91013" y="0"/>
+                    <off2 x="3.71983" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -19118,7 +19119,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="3.21965" y="0"/>
+                    <off2 x="2.68499" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -19392,7 +19393,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="3.95876" y="0"/>
+                    <off2 x="4.06152" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -19698,7 +19699,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="9.74893" y="0"/>
+                    <off2 x="10.982" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -20089,7 +20090,7 @@ hin und her kippen
                   <Segment>
                     <subtype>1</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="-2.63779" y="0"/>
+                    <off2 x="-2.64921" y="0"/>
                     </Segment>
                   <Segment>
                     <subtype>3</subtype>
@@ -20460,7 +20461,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="2.51366" y="0"/>
+                    <off2 x="2.59358" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -20998,7 +20999,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="3.16701" y="0"/>
+                    <off2 x="3.80639" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -22836,7 +22837,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="2.1465" y="0"/>
+                    <off2 x="2.06513" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -23131,6 +23132,11 @@ hin und her kippen
                 <TextLine>
                   <lineWidth>0.5</lineWidth>
                   <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="2.33953" y="0"/>
+                    </Segment>
                   </TextLine>
                 <next>
                   <location>
@@ -23179,7 +23185,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="3.17022" y="0"/>
+                    <off2 x="3.00747" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -24031,9 +24037,9 @@ hin und her kippen
       <Measure>
         <voice>
           <StaffText>
-            <minDistance>0.377938</minDistance>
+            <autoplace>0</autoplace>
             <size>8</size>
-            <offset x="-0.854436" y="-1.13084"/>
+            <offset x="-1" y="-1.13"/>
             <frameType>1</frameType>
             <text>unregelmäßig</text>
             </StaffText>
@@ -24088,7 +24094,7 @@ hin und her kippen
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="-1.85128" y="0"/>
-                    <off2 x="6.04209" y="0"/>
+                    <off2 x="6.26587" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -29770,7 +29776,8 @@ hin und her kippen
           <StaffText>
             <autoplace>0</autoplace>
             <size>8</size>
-            <offset x="-11.6778" y="-4.45132"/>
+            <textLineSpacing>0.8</textLineSpacing>
+            <offset x="-11.68" y="-4.45"/>
             <frameType>1</frameType>
             <text>Finger langsam auflegen
 und abrupt wegnehmen
@@ -30852,6 +30859,16 @@ und abrupt wegnehmen
                   <glissandoStyle>portamento</glissandoStyle>
                   <diagonal>1</diagonal>
                   <anchor>3</anchor>
+                  <Segment>
+                    <subtype>1</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="-0.0791185" y="-0.00719259"/>
+                    </Segment>
+                  <Segment>
+                    <subtype>3</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="0" y="0"/>
+                    </Segment>
                   </Glissando>
                 <next>
                   <location>
@@ -30871,6 +30888,16 @@ und abrupt wegnehmen
                   <glissandoStyle>portamento</glissandoStyle>
                   <diagonal>1</diagonal>
                   <anchor>3</anchor>
+                  <Segment>
+                    <subtype>1</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="-0.0719259" y="0"/>
+                    </Segment>
+                  <Segment>
+                    <subtype>3</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="0" y="0"/>
+                    </Segment>
                   </Glissando>
                 <next>
                   <location>
@@ -38076,6 +38103,7 @@ und abrupt wegnehmen
           <Dynamic>
             <subtype>pp</subtype>
             <velocity>33</velocity>
+            <visible>0</visible>
             </Dynamic>
           <Chord>
             <durationType>whole</durationType>
@@ -39635,7 +39663,7 @@ und abrupt wegnehmen
         <voice>
           <StaffText>
             <size>8</size>
-            <offset x="-7" y="-2"/>
+            <offset x="-6.5" y="-2.5"/>
             <frameType>1</frameType>
             <text>jeweils exakt und mit Akzent enden</text>
             </StaffText>
@@ -39688,6 +39716,7 @@ und abrupt wegnehmen
             <visible>0</visible>
             </Breath>
           <StaffText>
+            <visible>0</visible>
             <placement>below</placement>
             <minDistance>0.220711</minDistance>
             <color r="255" g="0" b="0" a="255"/>
