@@ -2,6 +2,13 @@
 
 (in-package :sc)
 
+;;; This is just some scripts for generating sequences of "chords"/harmonics.
+;;; These functions are not designed to be used in another context, even though
+;;; they could be easily modified to do so. However, this file and its functions
+;;; are purely written to use in my piece "catch a break" for flute and viola.
+;;; Change this, if you want to try it yourself:
+(defparameter *target-dir* "/E/catch/")
+
 (in-scale :quarter-tone)
 
 ;; ** the material
@@ -286,7 +293,7 @@
   (loop for i in (compose-flute (first *gliss*) 30 *gliss*)
 	collect (id i)))
 
-(notate *flute* "/E/catch/flute-gliss.xml" 'flute)
+(notate *flute* (format nil "~aflute-gliss.xml" *target-dir*) 'flute)
 
 ;; *** viola
 
@@ -362,10 +369,10 @@
 	 collect (get-timeline-track i *flute* t))))
 
 ;; to XML
-(harmonics-to-notation
+(notate
  (loop for bar in *viola-options*
        collect (sort-harmonics bar))
-       "/E/catch/viola.xml")
+       (format nil "~aviola.xml" *target-dir*))
 
 ;; NOTE: this is only harmonics for viola, not gliss!
 
