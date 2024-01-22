@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
-  <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programVersion>3.6.0</programVersion>
+  <programRevision>1977cb3</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -57,7 +57,7 @@
         <family id="drums">Schlagwerk</family>
         </instrument>
       <instrument id="flute">
-        <family id="flutes">Flöten</family>
+        <family id="flutes">Flutes</family>
         </instrument>
       <instrument id="horn">
         <family id="horns">Hörner</family>
@@ -962,12 +962,19 @@ anderen springen, außer ein Übergang ist mit einem Pfeil notiert. </text>
           <style>User-1</style>
           <offset x="3" y="0"/>
           <text>Von links nach rechts: sehr wenig Druck (keine Tonhöhe), weniger Druck als normal,
-mehr Druck als normal, viel Überdruck (keine Tonhöhe mehr).</text>
+mehr Druck als normal, viel Überdruck (keine Tonhöhe mehr). Gilt nur für die jeweils
+gekennzeichneten Noten.
+</text>
           </Text>
         </HBox>
       <VBox>
         <topGap>0</topGap>
         <bottomGap>4</bottomGap>
+        <boxAutoSize>0</boxAutoSize>
+        </VBox>
+      <VBox>
+        <topGap>0</topGap>
+        <bottomGap>0</bottomGap>
         <boxAutoSize>0</boxAutoSize>
         </VBox>
       <Measure len="5/4">
@@ -1054,7 +1061,7 @@ mehr Druck als normal, viel Überdruck (keine Tonhöhe mehr).</text>
           <style>User-1</style>
           <offset x="3" y="0"/>
           <text>Von links nach rechts: fast auf dem Steg, nahe dem Steg, ordinario Position,
-nahe dem Griffbrett, auf dem Griffbrett.</text>
+nahe dem Griffbrett, auf dem Griffbrett. Gilt jeweils bis aufgehoben, im Zweifel ord.</text>
           </Text>
         </HBox>
       <VBox>
@@ -1062,14 +1069,14 @@ nahe dem Griffbrett, auf dem Griffbrett.</text>
         <bottomGap>4</bottomGap>
         <boxAutoSize>0</boxAutoSize>
         </VBox>
-      <Measure len="2/4">
+      <Measure>
         <measureNumberMode>2</measureNumberMode>
         <voice>
           <BarLine>
             <visible>0</visible>
             </BarLine>
           <Chord>
-            <durationType>quarter</durationType>
+            <durationType>half</durationType>
             <Note>
               <pitch>71</pitch>
               <tpc>19</tpc>
@@ -1078,10 +1085,11 @@ nahe dem Griffbrett, auf dem Griffbrett.</text>
               </Note>
             </Chord>
           <Chord>
-            <durationType>quarter</durationType>
+            <durationType>half</durationType>
             <Note>
               <pitch>69</pitch>
               <tpc>17</tpc>
+              <headType>quarter</headType>
               </Note>
             <Note>
               <pitch>74</pitch>
@@ -1863,11 +1871,16 @@ Die Sprünge zwischen den Glissandi sollen also auch hier so klar wie möglich s
             </Rest>
           </voice>
         </Measure>
-      <Measure len="2/4">
+      <Measure>
+        <visible>0</visible>
         <voice>
           <Rest>
-            <durationType>half</durationType>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
             </Rest>
+          <location>
+            <fractions>-1/2</fractions>
+            </location>
           <Clef>
             <concertClefType>C3</concertClefType>
             <transposingClefType>C3</transposingClefType>
@@ -2348,6 +2361,23 @@ Die Sprünge zwischen den Glissandi sollen also auch hier so klar wie möglich s
                     </location>
                   </next>
                 </Spanner>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="-2.99264" y="0"/>
+                    <off2 x="-9.8092" y="0"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>1/2</fractions>
+                    <notes>1</notes>
+                    </location>
+                  </next>
+                </Spanner>
               </Note>
             </Chord>
           <Chord>
@@ -2363,7 +2393,7 @@ Die Sprünge zwischen den Glissandi sollen also auch hier so klar wie möglich s
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="5.36135" y="0"/>
+                    <off2 x="5.55532" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
@@ -2395,49 +2425,15 @@ Die Sprünge zwischen den Glissandi sollen also auch hier so klar wie möglich s
                   </prev>
                 </Spanner>
               </Note>
-            </Chord>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
-          <Chord>
-            <dots>1</dots>
-            <durationType>half</durationType>
             <Note>
               <visible>0</visible>
-              <NoteDot>
-                <visible>0</visible>
-                </NoteDot>
               <pitch>77</pitch>
               <tpc>13</tpc>
               <Spanner type="TextLine">
-                <TextLine>
-                  <lineWidth>0.5</lineWidth>
-                  <anchor>3</anchor>
-                  <Segment>
-                    <subtype>0</subtype>
-                    <offset x="0" y="0"/>
-                    <off2 x="3.84233" y="0"/>
-                    </Segment>
-                  </TextLine>
-                <next>
-                  <location>
-                    <fractions>3/4</fractions>
-                    </location>
-                  </next>
-                </Spanner>
-              </Note>
-            </Chord>
-          <Chord>
-            <durationType>quarter</durationType>
-            <Note>
-              <visible>0</visible>
-              <pitch>74</pitch>
-              <tpc>16</tpc>
-              <Spanner type="TextLine">
                 <prev>
                   <location>
-                    <fractions>-3/4</fractions>
+                    <fractions>-1/2</fractions>
+                    <notes>-1</notes>
                     </location>
                   </prev>
                 </Spanner>
@@ -2464,12 +2460,29 @@ Die Sprünge zwischen den Glissandi sollen also auch hier so klar wie möglich s
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="3.84233" y="0"/>
+                    <off2 x="3.98088" y="0"/>
                     </Segment>
                   </TextLine>
                 <next>
                   <location>
                     <fractions>3/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="-3.02035" y="0"/>
+                    <off2 x="-11.3609" y="0"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>3/4</fractions>
+                    <notes>1</notes>
                     </location>
                   </next>
                 </Spanner>
@@ -2485,6 +2498,96 @@ Die Sprünge zwischen den Glissandi sollen also auch hier so klar wie möglich s
                 <prev>
                   <location>
                     <fractions>-3/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-3/4</fractions>
+                    <notes>-1</notes>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <dots>1</dots>
+            <durationType>half</durationType>
+            <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="4.47965" y="0"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>3/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <lineWidth>0.5</lineWidth>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="-2.96237" y="0"/>
+                    <off2 x="-10.9855" y="0"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>3/4</fractions>
+                    <notes>1</notes>
+                    </location>
+                  </next>
+                </Spanner>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Note>
+              <visible>0</visible>
+              <pitch>74</pitch>
+              <tpc>16</tpc>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-3/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
+              </Note>
+            <Note>
+              <visible>0</visible>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-3/4</fractions>
+                    <notes>-1</notes>
                     </location>
                   </prev>
                 </Spanner>
@@ -2663,10 +2766,14 @@ Die Sprünge zwischen den Glissandi sollen also auch hier so klar wie möglich s
             </Rest>
           </voice>
         </Measure>
-      <Measure len="2/4">
+      <Measure>
+        <visible>0</visible>
+        <slashStyle>1</slashStyle>
+        <stemless>1</stemless>
         <voice>
           <Rest>
-            <durationType>half</durationType>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
             </Rest>
           </voice>
         </Measure>
