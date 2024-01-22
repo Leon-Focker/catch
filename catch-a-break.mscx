@@ -12464,7 +12464,6 @@ hin und her kippen
             <Note>
               <visible>0</visible>
               <NoteDot>
-                <visible>0</visible>
                 </NoteDot>
               <pitch>86</pitch>
               <tpc>16</tpc>
@@ -12893,6 +12892,10 @@ hin und her kippen
             <durationType>quarter</durationType>
             <StemDirection>up</StemDirection>
             <Note>
+              <visible>0</visible>
+              <NoteDot>
+                <visible>0</visible>
+                </NoteDot>
               <pitch>86</pitch>
               <tpc>16</tpc>
               <play>0</play>
@@ -12960,7 +12963,6 @@ hin und her kippen
             <Note>
               <visible>0</visible>
               <NoteDot>
-                <visible>0</visible>
                 </NoteDot>
               <pitch>86</pitch>
               <tpc>16</tpc>
@@ -13332,7 +13334,6 @@ hin und her kippen
             <Note>
               <visible>0</visible>
               <NoteDot>
-                <visible>0</visible>
                 </NoteDot>
               <pitch>86</pitch>
               <tpc>16</tpc>
@@ -31970,6 +31971,7 @@ und abrupt wegnehmen
             <durationType>quarter</durationType>
             </Rest>
           <StaffText>
+            <visible>0</visible>
             <minDistance>-2.83392</minDistance>
             <offset x="1.77341" y="-3.90641"/>
             <text>ord.</text>
@@ -32219,11 +32221,27 @@ und abrupt wegnehmen
             <Note>
               <pitch>52</pitch>
               <tpc>18</tpc>
+              <Spanner type="TextLine">
+                <TextLine>
+                  <endText>&gt; ord.</endText>
+                  <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0.486852" y="-6.12164"/>
+                    <off2 x="-1.77287" y="0"/>
+                    </Segment>
+                  </TextLine>
+                <next>
+                  <location>
+                    <fractions>1/4</fractions>
+                    </location>
+                  </next>
+                </Spanner>
               </Note>
             </Chord>
           <StaffText>
             <size>8</size>
-            <offset x="1.42112" y="-2.45537"/>
+            <offset x="2.33272" y="-3.62937"/>
             <frameType>1</frameType>
             <text>unabhängig von Flöte</text>
             </StaffText>
@@ -32244,6 +32262,13 @@ und abrupt wegnehmen
             <Note>
               <pitch>52</pitch>
               <tpc>18</tpc>
+              <Spanner type="TextLine">
+                <prev>
+                  <location>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             <Tremolo>
               <subtype>c8</subtype>
@@ -32995,6 +33020,11 @@ und abrupt wegnehmen
             <italic>1</italic>
             <offset x="-6" y="-2"/>
             <text>wild</text>
+            </StaffText>
+          <StaffText>
+            <minDistance>-5.05292</minDistance>
+            <offset x="-0.249957" y="-1.53115"/>
+            <text>ord.</text>
             </StaffText>
           <Chord>
             <durationType>quarter</durationType>
@@ -35111,6 +35141,7 @@ und abrupt wegnehmen
               </Note>
             </Chord>
           <StaffText>
+            <visible>0</visible>
             <minDistance>-4.44291</minDistance>
             <size>8</size>
             <offset x="-0.418943" y="-1.12679"/>
@@ -39643,7 +39674,7 @@ und abrupt wegnehmen
         <voice>
           <StaffText>
             <size>8</size>
-            <offset x="-6.5" y="-2.5"/>
+            <offset x="-6.5" y="-3"/>
             <frameType>1</frameType>
             <text>jeweils exakt und mit Akzent enden</text>
             </StaffText>
@@ -39651,6 +39682,11 @@ und abrupt wegnehmen
             <subtype>mp</subtype>
             <velocity>64</velocity>
             </Dynamic>
+          <StaffText>
+            <minDistance>-3.97531</minDistance>
+            <offset x="-0.460951" y="-0.624692"/>
+            <text>ord.</text>
+            </StaffText>
           <Chord>
             <durationType>half</durationType>
             <Note>
