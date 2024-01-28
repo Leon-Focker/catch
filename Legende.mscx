@@ -1223,10 +1223,14 @@ klingen wie whistle tones auf der Flöte.</text>
           </LayoutBreak>
         <Text>
           <style>User-1</style>
-          <offset x="3" y="0"/>
+          <offset x="3" y="-5"/>
           <text>Vom Klangresultat ähnlich, wie die springenden Flageoletts, allerdings lauter. Dazu
 soll alles auf einer Saite und so weit wie möglich mit einem Bogen gespielt werden.
-Die Sprünge zwischen den Glissandi sollen also auch hier so klar wie möglich sein.</text>
+Die Sprünge zwischen den Glissandi sollen also auch hier so klar wie möglich sein.
+Bei diesem Beispiel würde das bedeuten, mit der ganzen Hand eine Glissandobewegung
+zu machen und den vierten Finger erst von der Saite zu nehmen, wenn der Dritte schon
+auf der Saite ist, usw.
+</text>
           </Text>
         </HBox>
       </Staff>
