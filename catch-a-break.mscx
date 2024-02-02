@@ -11401,7 +11401,7 @@ hin und her kippen
           <Dynamic>
             <subtype>other-dynamics</subtype>
             <velocity>112</velocity>
-            <text><i>(</i><font face="ScoreText"/><i><font face="Edwin"/>)</i></text>
+            <text><i>(</i><font face="ScoreText"></font><i><font face="Edwin"></font>)</i></text>
             </Dynamic>
           <Tempo>
             <tempo>1.58333</tempo>
@@ -11460,6 +11460,10 @@ hin und her kippen
                   </next>
                 </Spanner>
               </Note>
+            <Tremolo>
+              <subtype>buzzroll</subtype>
+              <offset x="-0.5" y="-1"/>
+              </Tremolo>
             </Chord>
           </voice>
         </Measure>
@@ -11502,6 +11506,10 @@ hin und her kippen
                   </prev>
                 </Spanner>
               </Note>
+            <Tremolo>
+              <subtype>buzzroll</subtype>
+              <offset x="0" y="-1"/>
+              </Tremolo>
             </Chord>
           </voice>
         <voice>
@@ -11599,6 +11607,10 @@ hin und her kippen
               <pitch>62</pitch>
               <tpc>16</tpc>
               </Note>
+            <Tremolo>
+              <subtype>buzzroll</subtype>
+              <offset x="0" y="-1"/>
+              </Tremolo>
             </Chord>
           </voice>
         <voice>
@@ -11695,6 +11707,10 @@ hin und her kippen
               <pitch>62</pitch>
               <tpc>16</tpc>
               </Note>
+            <Tremolo>
+              <subtype>buzzroll</subtype>
+              <offset x="0" y="-1"/>
+              </Tremolo>
             </Chord>
           </voice>
         <voice>
@@ -38927,6 +38943,11 @@ und abrupt wegnehmen
             <sigN>4</sigN>
             <sigD>4</sigD>
             </TimeSig>
+          <StaffText>
+            <minDistance>-4.70469</minDistance>
+            <offset x="7" y="-1"/>
+            <text>ord.</text>
+            </StaffText>
           <Chord>
             <durationType>whole</durationType>
             <Note>
@@ -38957,35 +38978,49 @@ und abrupt wegnehmen
       <Measure>
         <voice>
           <StaffText>
-            <autoplace>0</autoplace>
             <size>8</size>
-            <offset x="-5" y="-4.5"/>
-            <frameType>1</frameType>
-            <text>ganze Zeile auf III spielen</text>
+            <italic>1</italic>
+            <offset x="-6.46926" y="-5.52904"/>
+            <text>sempre
+ sulla II
+</text>
+            </StaffText>
+          <StaffText>
+            <autoplace>0</autoplace>
+            <size>6</size>
+            <offset x="0.75" y="-6.5"/>
+            <text>2</text>
             </StaffText>
           <Rest>
             <visible>0</visible>
             <durationType>quarter</durationType>
             </Rest>
+          <StaffText>
+            <autoplace>0</autoplace>
+            <size>6</size>
+            <offset x="0.75" y="-6.5"/>
+            <text>1</text>
+            </StaffText>
           <Chord>
             <durationType>quarter</durationType>
+            <StemDirection>down</StemDirection>
             <Note>
               <Accidental>
                 <role>1</role>
-                <subtype>accidentalQuarterToneFlatStein</subtype>
+                <subtype>accidentalQuarterToneSharpStein</subtype>
                 </Accidental>
-              <pitch>69</pitch>
-              <tpc>17</tpc>
-              <tuning>-50</tuning>
+              <pitch>72</pitch>
+              <tpc>14</tpc>
+              <tuning>50</tuning>
               <Spanner type="Glissando">
                 <Glissando>
-                  <glissandoStyle>portamento</glissandoStyle>
+                  <text>gliss.</text>
                   <diagonal>1</diagonal>
                   <anchor>3</anchor>
                   <Segment>
                     <subtype>0</subtype>
                     <offset x="0" y="0"/>
-                    <off2 x="-1.05567" y="-0.153952"/>
+                    <off2 x="-0.197938" y="0.263917"/>
                     </Segment>
                   </Glissando>
                 <next>
@@ -38996,15 +39031,23 @@ und abrupt wegnehmen
                 </Spanner>
               </Note>
             </Chord>
+          <StaffText>
+            <autoplace>0</autoplace>
+            <size>6</size>
+            <offset x="0.75" y="-6.5"/>
+            <text>2</text>
+            </StaffText>
           <Chord>
             <small>1</small>
             <durationType>quarter</durationType>
+            <StemDirection>down</StemDirection>
             <Note>
               <Accidental>
-                <subtype>accidentalFlat</subtype>
+                <role>1</role>
+                <subtype>accidentalQuarterToneFlatStein</subtype>
                 </Accidental>
-              <pitch>68</pitch>
-              <tpc>10</tpc>
+              <pitch>69</pitch>
+              <tpc>17</tpc>
               <small>1</small>
               <play>0</play>
               <tuning>-50</tuning>
@@ -39017,6 +39060,12 @@ und abrupt wegnehmen
                 </Spanner>
               </Note>
             </Chord>
+          <StaffText>
+            <autoplace>0</autoplace>
+            <size>6</size>
+            <offset x="0.75" y="-6.5"/>
+            <text>3</text>
+            </StaffText>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
@@ -39040,6 +39089,14 @@ und abrupt wegnehmen
                     </location>
                   </next>
                 </Spanner>
+              <Spanner type="Glissando">
+                <prev>
+                  <location>
+                    <voices>1</voices>
+                    <fractions>-1/4</fractions>
+                    </location>
+                  </prev>
+                </Spanner>
               </Note>
             </Chord>
           </voice>
@@ -39052,19 +39109,26 @@ und abrupt wegnehmen
             <durationType>quarter</durationType>
             <Spanner type="Slur">
               <Slur>
+                <SlurSegment no="0">
+                  <o2 x="-0.0698238" y="0.488767"/>
+                  <o3 x="-0.0698238" y="0.488767"/>
+                  </SlurSegment>
                 </Slur>
               <next>
                 <location>
-                  <fractions>3/4</fractions>
+                  <voices>-1</voices>
+                  <measures>1</measures>
                   </location>
                 </next>
               </Spanner>
+            <StemDirection>up</StemDirection>
             <Note>
-              <pitch>62</pitch>
-              <tpc>16</tpc>
+              <pitch>77</pitch>
+              <tpc>13</tpc>
               <Spanner type="Glissando">
                 <Glissando>
                   <glissandoStyle>portamento</glissandoStyle>
+                  <offset x="-0.263917" y="-0.0879725"/>
                   <diagonal>1</diagonal>
                   <anchor>3</anchor>
                   <Segment>
@@ -39085,16 +39149,15 @@ und abrupt wegnehmen
           <Chord>
             <small>1</small>
             <durationType>quarter</durationType>
+            <StemDirection>up</StemDirection>
             <Note>
               <Accidental>
-                <role>1</role>
-                <subtype>accidentalQuarterToneFlatStein</subtype>
+                <subtype>accidentalFlat</subtype>
                 </Accidental>
-              <pitch>62</pitch>
-              <tpc>16</tpc>
+              <pitch>75</pitch>
+              <tpc>11</tpc>
               <small>1</small>
               <play>0</play>
-              <tuning>-50</tuning>
               <Spanner type="Glissando">
                 <prev>
                   <location>
@@ -39106,20 +39169,24 @@ und abrupt wegnehmen
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
+            <StemDirection>up</StemDirection>
             <Note>
-              <Accidental>
-                <subtype>accidentalFlat</subtype>
-                </Accidental>
-              <pitch>66</pitch>
-              <tpc>8</tpc>
+              <pitch>71</pitch>
+              <tpc>19</tpc>
               <Spanner type="Glissando">
                 <Glissando>
-                  <text>gliss.</text>
+                  <glissandoStyle>portamento</glissandoStyle>
                   <diagonal>1</diagonal>
                   <anchor>3</anchor>
+                  <Segment>
+                    <subtype>0</subtype>
+                    <offset x="0" y="0"/>
+                    <off2 x="-0.195879" y="0.521993"/>
+                    </Segment>
                   </Glissando>
                 <next>
                   <location>
+                    <voices>-1</voices>
                     <fractions>1/4</fractions>
                     </location>
                   </next>
@@ -39129,30 +39196,11 @@ und abrupt wegnehmen
           <Chord>
             <small>1</small>
             <durationType>quarter</durationType>
-            <Spanner type="Slur">
-              <prev>
-                <location>
-                  <fractions>-3/4</fractions>
-                  </location>
-                </prev>
-              </Spanner>
             <Note>
-              <Accidental>
-                <role>1</role>
-                <subtype>accidentalQuarterToneSharpStein</subtype>
-                </Accidental>
-              <pitch>65</pitch>
-              <tpc>13</tpc>
+              <pitch>67</pitch>
+              <tpc>15</tpc>
               <small>1</small>
               <play>0</play>
-              <tuning>50</tuning>
-              <Spanner type="Glissando">
-                <prev>
-                  <location>
-                    <fractions>-1/4</fractions>
-                    </location>
-                  </prev>
-                </Spanner>
               </Note>
             </Chord>
           </voice>
@@ -39194,6 +39242,14 @@ und abrupt wegnehmen
           <Chord>
             <durationType>half</durationType>
             <duration>1/4</duration>
+            <Spanner type="Slur">
+              <prev>
+                <location>
+                  <voices>1</voices>
+                  <measures>-1</measures>
+                  </location>
+                </prev>
+              </Spanner>
             <Spanner type="Slur">
               <Slur>
                 </Slur>

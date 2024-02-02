@@ -779,11 +779,11 @@ diesen hin und her kippen / &quot;schaukeln&quot;.</text>
         <topGap>0</topGap>
         <boxAutoSize>0</boxAutoSize>
         </VBox>
-      <Measure len="1/4">
+      <Measure len="2/4">
         <measureNumberMode>2</measureNumberMode>
         <voice>
           <Rest>
-            <durationType>quarter</durationType>
+            <durationType>half</durationType>
             </Rest>
           </voice>
         </Measure>
@@ -797,7 +797,7 @@ diesen hin und her kippen / &quot;schaukeln&quot;.</text>
         <Text>
           <style>User-1</style>
           <offset x="3" y="0"/>
-          <text>Möglichst dichter / vielstimmiger Mehrklang.  </text>
+          <text>Mehrklang, möglichst dicht und im angegebenen Register. Rechts mit Flatterzunge. </text>
           </Text>
         </HBox>
       <VBox>
@@ -1566,7 +1566,7 @@ auf der Saite ist, usw.
             </Chord>
           </voice>
         </Measure>
-      <Measure len="1/4">
+      <Measure len="2/4">
         <voice>
           <BarLine>
             <visible>0</visible>
@@ -1586,9 +1586,25 @@ auf der Saite ist, usw.
               <tpc>16</tpc>
               </Note>
             </Chord>
-          <BarLine>
-            <visible>0</visible>
-            </BarLine>
+          <Chord>
+            <durationType>quarter</durationType>
+            <Stem>
+              <visible>0</visible>
+              </Stem>
+            <Note>
+              <visible>0</visible>
+              <Symbol>
+                <name>noteheadClusterRoundWhite</name>
+                <font>Bravura</font>
+                </Symbol>
+              <pitch>62</pitch>
+              <tpc>16</tpc>
+              </Note>
+            <Tremolo>
+              <subtype>buzzroll</subtype>
+              <offset x="-0.5" y="-1"/>
+              </Tremolo>
+            </Chord>
           </voice>
         </Measure>
       <Measure>
@@ -2679,7 +2695,7 @@ auf der Saite ist, usw.
             </Chord>
           </voice>
         </Measure>
-      <Measure len="1/4">
+      <Measure len="2/4">
         <voice>
           <Spanner type="Vibrato">
             <prev>
@@ -2689,7 +2705,7 @@ auf der Saite ist, usw.
               </prev>
             </Spanner>
           <Rest>
-            <durationType>quarter</durationType>
+            <durationType>half</durationType>
             </Rest>
           </voice>
         </Measure>
