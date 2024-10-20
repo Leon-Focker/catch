@@ -1,6 +1,6 @@
 ;; * sort-gliss.lsp
 
-(in-package :sc)
+(in-package :ly)
 
 ;;; This is just some scripts for generating sequences of "chords"/harmonics.
 ;;; These functions are not designed to be used in another context, even though

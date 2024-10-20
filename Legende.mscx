@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
-  <programVersion>3.6.0</programVersion>
-  <programRevision>1977cb3</programRevision>
+  <programVersion>3.6.2</programVersion>
+  <programRevision>3224f34</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -22,7 +22,7 @@
       <user1LineSpacing>0.3</user1LineSpacing>
       <Spatium>1.74978</Spatium>
       </Style>
-    <showInvisible>0</showInvisible>
+    <showInvisible>1</showInvisible>
     <showUnprintable>1</showUnprintable>
     <showFrames>1</showFrames>
     <showMargins>0</showMargins>
@@ -57,7 +57,7 @@
         <family id="drums">Schlagwerk</family>
         </instrument>
       <instrument id="flute">
-        <family id="flutes">Flutes</family>
+        <family id="flutes">Flöten</family>
         </instrument>
       <instrument id="horn">
         <family id="horns">Hörner</family>
@@ -796,14 +796,25 @@ diesen hin und her kippen / &quot;schaukeln&quot;.</text>
           </LayoutBreak>
         <Text>
           <style>User-1</style>
-          <offset x="3" y="0"/>
-          <text>Mehrklang, möglichst dicht und im angegebenen Register. Rechts mit Flatterzunge. </text>
+          <offset x="3" y="-3"/>
+          <text>Mehrklang, möglichst dicht und im angegebenen Register. Rechts mit Flatterzunge.
+Der genaue Griff sollte individuell ausgetestet werden, in der Uraufführung haben
+wir diese benutzt: 
+Takt 96:                 links: 1/2/3/4     rechts: 2 (nur Ring) /3/4/5 (C-Klappe)
+Takt 112 ff:            links: 1/2           rechts: 2 (nur Ring) + Flatterzunge</text>
           </Text>
         </HBox>
       <VBox>
         <topGap>0</topGap>
         <bottomGap>7.5</bottomGap>
         <boxAutoSize>0</boxAutoSize>
+        </VBox>
+      <VBox>
+        <height>1</height>
+        <topGap>0</topGap>
+        <bottomGap>0</bottomGap>
+        <boxAutoSize>0</boxAutoSize>
+        <visible>0</visible>
         </VBox>
       <Measure>
         <measureNumberMode>2</measureNumberMode>
@@ -863,7 +874,7 @@ wilde und unvorhersehbare Tonfolge sein. </text>
         <boxAutoSize>0</boxAutoSize>
         </VBox>
       <VBox>
-        <height>51</height>
+        <height>47</height>
         <boxAutoSize>0</boxAutoSize>
         <visible>0</visible>
         <LayoutBreak>
